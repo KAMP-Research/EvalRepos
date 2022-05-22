@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated topo -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="topo.presentation.TopoModelWizardID"
+            name="%_UI_TopoModelWizard_label"
+            class="topo.presentation.TopoModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TopoModelFile.gif">
+         <description>%_UI_TopoModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated topo -->
+      <editor
+            id="topo.presentation.TopoEditorID"
+            name="%_UI_TopoEditor_label"
+            icon="icons/full/obj16/TopoModelFile.gif"
+            extensions="topo"
+            class="topo.presentation.TopoEditor"
+            contributorClass="topo.presentation.TopoActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/msmartgrid.domain.topo/src" modelPluginID="msmartgrid.domain.topo"
+    modelName="Topo" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../msmartgrid.paradigm.base/model/base.genmodel#//base ../../msmartgrid.paradigm.graph/model/graph.genmodel#//graph"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>topo.ecore</foreignModel>
+  <genPackages prefix="Topo" disposableProviderFactory="true" ecorePackage="topo.ecore#/">
+    <genClasses ecoreClass="topo.ecore#//SmartGridTopology">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference topo.ecore#//SmartGridTopology/ContainsNE"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference topo.ecore#//SmartGridTopology/ContainsPGN"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference topo.ecore#//SmartGridTopology/ContainsPC"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference topo.ecore#//SmartGridTopology/ContainsLC"/>
+    </genClasses>
+    <genClasses ecoreClass="topo.ecore#//SmartMeter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute topo.ecore#//SmartMeter/Aggregation"/>
+    </genClasses>
+    <genClasses ecoreClass="topo.ecore#//NetworkNode"/>
+    <genClasses ecoreClass="topo.ecore#//ControlCenter"/>
+    <genClasses ecoreClass="topo.ecore#//GenericController"/>
+    <genClasses ecoreClass="topo.ecore#//InterCom"/>
+  </genPackages>
+</genmodel:GenModel>
