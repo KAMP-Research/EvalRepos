@@ -1,23 +1,22 @@
 package edu.kit.ipd.sdq.kamp4aps.core;
 
+import domain.as.Component;
+import domain.as.Interface;
+import domain.as.Structure;
 import edu.kit.ipd.sdq.kamp.workplan.AbstractActivityElementType;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.CalibrationConfiguration;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ComponentStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.Drawing;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.HMIConfiguration;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.InterfaceStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.MainteneanceDocumentation;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ModuleStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.OperatorInstructions;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.StructureStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.TestCase;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.TrainingDocExternal;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.TrainingDocIntern;
 import edu.kit.ipd.sdq.kamp4iec.model.IECRepository.GlobalVariable;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.Module;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.StructureRepository.Structure;
+import quality.as_foaa.CalibrationConfiguration;
+import quality.as_foaa.ComponentStockList;
+import quality.as_foaa.Drawing;
+import quality.as_foaa.HMIConfiguration;
+import quality.as_foaa.InterfaceStockList;
+import quality.as_foaa.MainteneanceDocumentation;
+import quality.as_foaa.ModuleStockList;
+import quality.as_foaa.OperatorInstructions;
+import quality.as_foaa.StructureStockList;
+import quality.as_foaa.TestCase;
+import quality.as_foaa.TrainingDocExternal;
+import quality.as_foaa.TrainingDocIntern;
 
 /**
  * This class represents the elements an activity can affect.

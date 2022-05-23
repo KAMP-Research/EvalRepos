@@ -1,22 +1,16 @@
 package edu.kit.ipd.sdq.kamp4aps.core;
 
+import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion.ArchitectureVersionParams;
 import edu.kit.ipd.sdq.kamp4aps.model.DeploymentContext.DeploymentContextFactory;
 import edu.kit.ipd.sdq.kamp4aps.model.DeploymentContext.DeploymentContextRepository;
-
-import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion.ArchitectureVersionParams;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.CalibrationSpecification;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.DocumentationSpecification;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ECADSpecification;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.FieldOfActivityAnnotationRepository;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.KAMP4aPSFieldofactivityannotationsFactory;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.HMISpecification;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.StaffSpecification;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.StockSpecification;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.TestSpecification;
-import edu.kit.ipd.sdq.kamp4iec.core.IECArchitectureModelFactoryFacade;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSModificationRepository;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSSeedModifications;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSModificationmarksFactory;
+import quality.as_foaa.DocumentationSpecification;
+import quality.as_foaa.ECADSpecification;
+import quality.as_foaa.FieldOfActivityAnnotationRepository;
+import quality.as_foaa.HMISpecification;
+import quality.as_foaa.StaffSpecification;
+import quality.as_foaa.StockSpecification;
+import quality.as_foaa.TestSpecification;
+import quality.as_mm.KAMP4aPSModificationRepository;
 
 /**
  * This class loads the structural and non-structural models

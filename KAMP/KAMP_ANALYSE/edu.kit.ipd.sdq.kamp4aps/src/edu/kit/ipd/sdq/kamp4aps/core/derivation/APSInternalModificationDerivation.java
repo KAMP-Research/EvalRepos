@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
-
+import domain.as.Component;
+import domain.as.Interface;
+import domain.as.Structure;
 import edu.kit.ipd.sdq.kamp.architecture.ArchitectureModelLookup;
 import edu.kit.ipd.sdq.kamp.model.modificationmarks.AbstractModification;
 import edu.kit.ipd.sdq.kamp.workplan.AbstractActivityElementType;
@@ -12,16 +14,11 @@ import edu.kit.ipd.sdq.kamp.workplan.Activity;
 import edu.kit.ipd.sdq.kamp.workplan.BasicActivity;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityElementType;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityType;
-import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyComponent;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyInterface;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyModule;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyStructure;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.Module;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.StructureRepository.Structure;
+import quality.as_mm.ModifyComponent;
+import quality.as_mm.ModifyInterface;
+import quality.as_mm.ModifyModule;
+import quality.as_mm.ModifyStructure;
 
 /**
  * 

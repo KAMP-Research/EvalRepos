@@ -7,31 +7,26 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
-
+import domain.aps.buscomponents.BusBox;
+import domain.aps.buscomponents.BusCable;
+import domain.aps.buscomponents.BusMaster;
+import domain.aps.intefaces.SignalInterface;
+import domain.as.Component;
+import domain.as.Interface;
+import domain.as.Plant;
+import domain.as.Structure;
 import edu.kit.ipd.sdq.kamp.architecture.ArchitectureModelLookup;
 import edu.kit.ipd.sdq.kamp4aps.model.DeploymentContext.ComponentCorrelation;
 import edu.kit.ipd.sdq.kamp4aps.model.DeploymentContext.VariableMapping;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ChangePropagationDueToHardwareChange;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyComponent;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyInterface;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyModule;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyStructure;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.Plant;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusBox;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusCable;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusMaster;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusSlave;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.SignalInterface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.Module;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.StructureRepository.Structure;
-import edu.kit.ipd.sdq.kamp4aps.model.basic.Entity;
-import edu.kit.ipd.sdq.kamp4aps.model.basic.Identifier;
 import edu.kit.ipd.sdq.kamp4iec.model.IECRepository.GlobalVariable;
+import omain.aps.buscomponents.BusSlave;
+import quality.as_mm.ChangePropagationDueToHardwareChange;
+import quality.as_mm.ModifyComponent;
+import quality.as_mm.ModifyInterface;
+import quality.as_mm.ModifyModule;
+import quality.as_mm.ModifyStructure;
 
 /**
  * This class represents a part of the change rules implementation
@@ -361,7 +356,7 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 			ChangePropagationDueToHardwareChange changePropagationDueToHardwareChange){
 		Map<Interface, Set<Module>> results = new HashMap<Interface, Set<Module>>();
 		for(Interface modifyInterface : initialMarkedInterfaces){
-			for(Identifier parent : modifyInterface.getParentElement()){
+			for(paradigm.basic.Identifier parent : modifyInterface.getParentElement()){
 				if(parent instanceof Module){
 					if(results.get(modifyInterface) == null)
 						results.put(modifyInterface, new HashSet<Module>());
@@ -373,7 +368,7 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 		
 		List<ModifyInterface<Interface>> interfacesToModify = changePropagationDueToHardwareChange.getInterfaceModifications();
 		for(ModifyInterface<Interface> modifyInterface : interfacesToModify){
-			for(Identifier parent : modifyInterface.getAffectedElement().getParentElement()){
+			for(paradigm.basic.Identifier parent : modifyInterface.getAffectedElement().getParentElement()){
 				if(parent instanceof Module){
 					if(results.get(modifyInterface.getAffectedElement()) == null)
 						results.put(modifyInterface.getAffectedElement(), new HashSet<Module>());
@@ -395,7 +390,7 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 			ChangePropagationDueToHardwareChange changePropagationDueToHardwareChange){
 		Map<Interface, Set<Component>> results = new HashMap<Interface, Set<Component>>();
 		for(Interface modifyInterface : initialMarkedInterfaces){
-			for(Identifier parent : modifyInterface.getParentElement()){
+			for(paradigm.basic.Identifier parent : modifyInterface.getParentElement()){
 				if(parent instanceof Component){
 					if(results.get(modifyInterface) == null)
 						results.put(modifyInterface, new HashSet<Component>());
@@ -406,7 +401,7 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 		}
 		
 		for(ModifyInterface<Interface> modifyInterface : changePropagationDueToHardwareChange.getInterfaceModifications()){
-			for(Identifier parent : modifyInterface.getAffectedElement().getParentElement()){
+			for(paradigm.basic.Identifier parent : modifyInterface.getAffectedElement().getParentElement()){
 				if(parent instanceof Component){
 					if(results.get(modifyInterface.getAffectedElement()) == null)
 						results.put(modifyInterface.getAffectedElement(), new HashSet<Component>());
@@ -500,15 +495,15 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 		for(BusBox key : bcParams.causingElementsOfBusBox.keySet()){
 			for(BusCable cable : bcParams.busCablesToChange){
 				if(bcParams.causingElementsOfBusCable.get(cable) == null){
-					bcParams.causingElementsOfBusCable.put(cable, new HashSet<Identifier>());
+					bcParams.causingElementsOfBusCable.put(cable, new HashSet<paradigm.basic.Identifier>());
 				}
 				if(bcParams.causingElementsOfBusBox.get(key).contains(cable.getSignalPlug1())){
-					Set<Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
-					causingElement.add((Identifier)cable.getSignalPlug1());
+					Set<paradigm.basic.Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
+					causingElement.add((paradigm.basic.Identifier)cable.getSignalPlug1());
 					bcParams.causingElementsOfBusCable.put(cable, causingElement);
 				} else if(bcParams.causingElementsOfBusBox.get(key).contains(cable.getSignalPlug2())){
-					Set<Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
-					causingElement.add((Identifier)cable.getSignalPlug2());
+					Set<paradigm.basic.Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
+					causingElement.add((paradigm.basic.Identifier)cable.getSignalPlug2());
 					bcParams.causingElementsOfBusCable.put(cable, causingElement);
 				}
 			}
@@ -519,15 +514,15 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 		for(BusSlave key : bcParams.causingElementsOfBusSlave.keySet()){
 			for(BusCable cable : bcParams.busCablesToChange){
 				if(bcParams.causingElementsOfBusCable.get(cable) == null){
-					bcParams.causingElementsOfBusCable.put(cable, new HashSet<Identifier>());
+					bcParams.causingElementsOfBusCable.put(cable, new HashSet<paradigm.basic.Identifier>());
 				}
 				if(bcParams.causingElementsOfBusSlave.get(key).contains(cable.getSignalPlug1())){
-					Set<Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
-					causingElement.add((Identifier)cable.getSignalPlug1());
+					Set<paradigm.basic.Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
+					causingElement.add((paradigm.basic.Identifier)cable.getSignalPlug1());
 					bcParams.causingElementsOfBusCable.put(cable, causingElement);
 				} else if(bcParams.causingElementsOfBusSlave.get(key).contains(cable.getSignalPlug2())){
-					Set<Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
-					causingElement.add((Identifier)cable.getSignalPlug2());
+					Set<paradigm.basic.Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
+					causingElement.add((paradigm.basic.Identifier)cable.getSignalPlug2());
 					bcParams.causingElementsOfBusCable.put(cable, causingElement);
 				}
 			}
@@ -538,15 +533,15 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 		for(BusMaster key : bcParams.causingElementsOfBusMaster.keySet()){
 			for(BusCable cable : bcParams.busCablesToChange){
 				if(bcParams.causingElementsOfBusCable.get(cable) == null){
-					bcParams.causingElementsOfBusCable.put(cable, new HashSet<Identifier>());
+					bcParams.causingElementsOfBusCable.put(cable, new HashSet<paradigm.basic.Identifier>());
 				}
 				if(bcParams.causingElementsOfBusMaster.get(key).contains(cable.getSignalPlug1())){
-					Set<Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
-					causingElement.add((Identifier)cable.getSignalPlug1());
+					Set<paradigm.basic.Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
+					causingElement.add((paradigm.basic.Identifier)cable.getSignalPlug1());
 					bcParams.causingElementsOfBusCable.put(cable, causingElement);
 				} else if(bcParams.causingElementsOfBusMaster.get(key).contains(cable.getSignalPlug2())){
-					Set<Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
-					causingElement.add((Identifier)cable.getSignalPlug2());
+					Set<paradigm.basic.Identifier> causingElement = bcParams.causingElementsOfBusCable.get(cable);
+					causingElement.add((paradigm.basic.Identifier)cable.getSignalPlug2());
 					bcParams.causingElementsOfBusCable.put(cable, causingElement);
 				}
 			}
@@ -581,9 +576,9 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 	private static void updateSlavesToAdd(EList<BusSlave> slavesToAdd, BusSlave bs, Interface bcInterface) {
 		slavesToAdd.add(bs);
 		if(bcParams.causingElementsOfBusSlave.get(bs) == null)
-			bcParams.causingElementsOfBusSlave.put(bs, new HashSet<Identifier>());
-		Set<Identifier> causingElements = bcParams.causingElementsOfBusSlave.get(bs);
-		causingElements.add((Identifier)bcInterface);
+			bcParams.causingElementsOfBusSlave.put(bs, new HashSet<paradigm.basic.Identifier>());
+		Set<paradigm.basic.Identifier> causingElements = bcParams.causingElementsOfBusSlave.get(bs);
+		causingElements.add((paradigm.basic.Identifier)bcInterface);
 	}
 	private static void addAllBusMastersThatAreConnectedToTheBusCables(EList<Interface> interfacesOfBusCables) {
 		EList<BusMaster> mastersToAdd = new BasicEList<BusMaster>();
@@ -611,9 +606,9 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 	private static void updateMastersToAdd(EList<BusMaster> mastersToAdd, BusMaster bm, Interface bcInterface) {
 		mastersToAdd.add(bm);
 		if(bcParams.causingElementsOfBusMaster.get(bm) == null)
-			bcParams.causingElementsOfBusMaster.put(bm, new HashSet<Identifier>());
-		Set<Identifier> causingElements = bcParams.causingElementsOfBusMaster.get(bm);
-		causingElements.add((Identifier)bcInterface);
+			bcParams.causingElementsOfBusMaster.put(bm, new HashSet<paradigm.basic.Identifier>());
+		Set<paradigm.basic.Identifier> causingElements = bcParams.causingElementsOfBusMaster.get(bm);
+		causingElements.add((paradigm.basic.Identifier)bcInterface);
 	}
 
 	private static void setAllBusComponentsInParams(EList<Component> allComponents) {
@@ -633,10 +628,10 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 			bcParams.allBusMasters = new HashSet<BusMaster>();
 			bcParams.allBusSlaves = new HashSet<BusSlave>();
 			bcParams.allBusCables = new HashSet<BusCable>();
-			bcParams.causingElementsOfBusBox = new HashMap<BusBox, Set<Identifier>>();
-			bcParams.causingElementsOfBusMaster = new HashMap<BusMaster, Set<Identifier>>();
-			bcParams.causingElementsOfBusSlave = new HashMap<BusSlave, Set<Identifier>>();
-			bcParams.causingElementsOfBusCable = new HashMap<BusCable, Set<Identifier>>();
+			bcParams.causingElementsOfBusBox = new HashMap<BusBox, Set<paradigm.basic.Identifier>>();
+			bcParams.causingElementsOfBusMaster = new HashMap<BusMaster, Set<paradigm.basic.Identifier>>();
+			bcParams.causingElementsOfBusSlave = new HashMap<BusSlave, Set<paradigm.basic.Identifier>>();
+			bcParams.causingElementsOfBusCable = new HashMap<BusCable, Set<paradigm.basic.Identifier>>();
 			bcParams.hasChanged = true;
 			return bcParams;
 		}
@@ -751,10 +746,10 @@ public class APSArchitectureModelLookup extends ArchitectureModelLookup {
 		public Set<BusMaster> allBusMasters;
 		public Set<BusSlave> allBusSlaves;
 		public Set<BusCable> allBusCables;
-		public Map<BusBox, Set<Identifier>> causingElementsOfBusBox;
-		public Map<BusMaster, Set<Identifier>> causingElementsOfBusMaster;
-		public Map<BusSlave, Set<Identifier>> causingElementsOfBusSlave;
-		public Map<BusCable, Set<Identifier>> causingElementsOfBusCable;
+		public Map<BusBox, Set<paradigm.basic.Identifier>> causingElementsOfBusBox;
+		public Map<BusMaster, Set<paradigm.basic.Identifier>> causingElementsOfBusMaster;
+		public Map<BusSlave, Set<paradigm.basic.Identifier>> causingElementsOfBusSlave;
+		public Map<BusCable, Set<paradigm.basic.Identifier>> causingElementsOfBusCable;
 		public boolean hasChanged;
 	}
 

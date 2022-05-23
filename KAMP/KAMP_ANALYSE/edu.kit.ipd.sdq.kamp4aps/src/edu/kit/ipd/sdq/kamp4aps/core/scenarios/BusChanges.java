@@ -2,25 +2,22 @@ package edu.kit.ipd.sdq.kamp4aps.core.scenarios;
 
 import java.util.Collection;
 import java.util.Set;
-
 import org.eclipse.emf.common.util.EList;
+import domain.aps.buscomponents.BusBox;
+import domain.aps.buscomponents.BusCable;
+import domain.aps.buscomponents.BusMaster;
+import domain.aps.intefaces.SignalInterface;
+import domain.as.Component;
+import domain.as.Plant;
 import edu.kit.ipd.sdq.kamp.architecture.ArchitectureModelLookup;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
 import edu.kit.ipd.sdq.kamp4aps.core.changepropagation.Change;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ChangePropagationDueToHardwareChange;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusBox;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusCable;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusMaster;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusSlave;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSModificationmarksFactory;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.Plant;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusBox;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusCable;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusMaster;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusSlave;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.SignalInterface;
-import edu.kit.ipd.sdq.kamp4aps.model.basic.Identifier;
+import omain.aps.buscomponents.BusSlave;
+import quality.aps_mm.ModifyBusBox;
+import quality.as_mm.ChangePropagationDueToHardwareChange;
+import quality.as_mm.ModifyBusCable;
+import quality.as_mm.ModifyBusMaster;
+import quality.as_mm.ModifyBusSlave;
 
 public class BusChanges extends Change {
 
@@ -51,7 +48,7 @@ public class BusChanges extends Change {
 		return modifyBusBox;
 	}
 	
-	public ModifyBusMaster createNewModifyBusMaster(BusMaster busMaster, Set<Identifier> causingElements) {
+	public ModifyBusMaster createNewModifyBusMaster(BusMaster busMaster, Set<paradigm.basic.Identifier> causingElements) {
 		ModifyBusMaster modifyBusMaster = KAMP4aPSModificationmarksFactory.eINSTANCE.createModifyBusMaster();
 		modifyBusMaster.setToolderived(true);
 		modifyBusMaster.setAffectedElement(busMaster);
@@ -60,7 +57,7 @@ public class BusChanges extends Change {
 		return modifyBusMaster;
 	}
 	
-	public ModifyBusSlave createNewModifyBusSlave(BusSlave busSlave, Set<Identifier> causingElements) {
+	public ModifyBusSlave createNewModifyBusSlave(BusSlave busSlave, Set<paradigm.basic.Identifier> causingElements) {
 		ModifyBusSlave modifyBusSlave = KAMP4aPSModificationmarksFactory.eINSTANCE.createModifyBusSlave();
 		modifyBusSlave.setToolderived(true);
 		modifyBusSlave.setAffectedElement(busSlave);
@@ -69,7 +66,7 @@ public class BusChanges extends Change {
 		return modifyBusSlave;
 	}
 	
-	public ModifyBusCable createNewModifyBusCable(BusCable busCable, Set<Identifier> causingElements) {
+	public ModifyBusCable createNewModifyBusCable(BusCable busCable, Set<paradigm.basic.Identifier> causingElements) {
 		ModifyBusCable modifyBusCable = KAMP4aPSModificationmarksFactory.eINSTANCE.createModifyBusCable();
 		modifyBusCable.setToolderived(true);
 		modifyBusCable.setAffectedElement(busCable);

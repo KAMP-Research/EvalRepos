@@ -1,18 +1,15 @@
 package edu.kit.ipd.sdq.kamp4aps.core.scenarios;
 
 import java.util.Collection;
-
+import domain.aps.intefaces.SignalInterface;
+import domain.aps.interfaces.PhysicalConnection;
 import edu.kit.ipd.sdq.kamp.architecture.ArchitectureModelLookup;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
 import edu.kit.ipd.sdq.kamp4aps.core.changepropagation.Change;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ChangePropagationDueToHardwareChange;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyPhysicalConnection;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifySensor;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifySignalinterface;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSModificationmarksFactory;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Sensor;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.PhysicalConnection;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.SignalInterface;
+import quality.aps_mm.ModifyPhysicalConnection;
+import quality.aps_mm.ModifySensor;
+import quality.aps_mm.ModifySignalinterface;
+import quality.as_mm.ChangePropagationDueToHardwareChange;
 
 public class SensorChanges extends Change {
 	
@@ -20,11 +17,13 @@ public class SensorChanges extends Change {
 		super(v);
 	}
 	
-	public Collection<Sensor> getInitialMarkedSensors(){
-		return ArchitectureModelLookup.lookUpMarkedObjectsOfAType(version, Sensor.class);
+	public Collection<domain.aps.components.Sensor> getInitialMarkedSensors(){
+		return ArchitectureModelLookup.lookUpMarkedObjectsOfAType(version, 
+				domain.aps.components.Sensor.class);
 	}
 
-	public void addSensorModificationToChangePropagation(Sensor sensor, 
+	public void addSensorModificationToChangePropagation(
+			domain.aps.components.Sensor sensor, 
 			ChangePropagationDueToHardwareChange changePropagationDueToHardwareChange,
 			Collection<SignalInterface> signalInterfaceToChange,
 			Collection<PhysicalConnection> physicalConnectionToChange) {

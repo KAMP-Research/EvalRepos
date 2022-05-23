@@ -1,24 +1,20 @@
 package edu.kit.ipd.sdq.kamp4aps.core.derivation;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import org.eclipse.emf.compare.Diff;
-
+import org.eclipse.emf.compare.ReferenceChange;
 import edu.kit.ipd.sdq.kamp.derivation.AbstractDifferenceCalculation;
 import edu.kit.ipd.sdq.kamp.workplan.Activity;
-import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
-import java.util.ArrayList;
-
-import org.eclipse.emf.compare.ReferenceChange;
-
 import edu.kit.ipd.sdq.kamp.workplan.BasicActivity;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityElementType;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityType;
+import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
+import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion.ArchitectureVersionParams;
 import edu.kit.ipd.sdq.kamp4aps.labels.LabelCustomizing;
-import edu.kit.ipd.sdq.kamp4aps.model.basic.NamedElement;
 import edu.kit.ipd.sdq.kamp4iec.core.IECArchitectureVersion;
-import edu.kit.ipd.sdq.kamp4iec.core.IECArchitectureVersion.ArchitectureVersionParams;
 import edu.kit.ipd.sdq.kamp4iec.core.derivation.IECDifferenceCalculation;
+import jdk.internal.org.jline.utils.DiffHelper.Diff;
+import paradigm.basic.NamedElement;
 
 /**
  * 

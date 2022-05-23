@@ -5,18 +5,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+import domain.aps.components.RegularRamp;
+import domain.as.Component;
+import domain.as.Interface;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
 import edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ComponentChanges;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ChangePropagationDueToHardwareChange;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSModificationmarksFactory;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Frame;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.RegularRamp;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyComponent;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyInterface;
+import quality.as_mm.ChangePropagationDueToHardwareChange;
+import quality.as_mm.ModifyComponent;
+import quality.as_mm.ModifyInterface;
 
 public class RampChange extends ComponentChanges {
 
@@ -42,7 +39,7 @@ public class RampChange extends ComponentChanges {
 	}
 	
 	// hol alle schnittstellen die mit ner rampe verbunden sind
-	// und füge sie der liste der beeinflussten schnittstellen hinzu
+	// und fï¿½ge sie der liste der beeinflussten schnittstellen hinzu
 	public void calculateAndMarkAffectedInterfacesByRampChange(ChangePropagationDueToHardwareChange changePropagationDueToHardwareChange){
  		List<ModifyInterface<Interface>> modifyInterfaces = null;
 		int mapHash;

@@ -1,36 +1,31 @@
 package edu.kit.ipd.sdq.kamp4aps.core.derivation;
 
-import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.eclipse.emf.ecore.EObject;
-
+import domain.as.Component;
+import domain.as.Interface;
+import domain.as.Plant;
+import domain.as.Structure;
 import edu.kit.ipd.sdq.kamp.workplan.AbstractEnrichedWorkplanDerivation;
 import edu.kit.ipd.sdq.kamp.workplan.Activity;
 import edu.kit.ipd.sdq.kamp.workplan.BasicActivity;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityElementType;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityType;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ComponentDrawing;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ComponentStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.DocumentationFiles;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.InterfaceDrawing;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.InterfaceStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ModuleDrawing;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.ModuleStockList;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.Role;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.StructureDrawing;
-import edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.StructureStockList;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModel.Program;
+import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
 import edu.kit.ipd.sdq.kamp4iec.model.IECRepository.GlobalVariable;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.Plant;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.Module;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.StructureRepository.Structure;
+import quality.as_foaa.ComponentDrawing;
+import quality.as_foaa.ComponentStockList;
+import quality.as_foaa.DocumentationFiles;
+import quality.as_foaa.InterfaceDrawing;
+import quality.as_foaa.InterfaceStockList;
+import quality.as_foaa.ModuleDrawing;
+import quality.as_foaa.ModuleStockList;
+import quality.as_foaa.StructureDrawing;
+import quality.as_foaa.StructureStockList;
 
 /**
  * 

@@ -1,19 +1,17 @@
 package edu.kit.ipd.sdq.kamp4aps.core.derivation;
 
+import domain.aps.components.TurningTable;
+import domain.as.Component;
+import domain.as.Interface;
+import domain.as.Structure;
+import domain.ppu.ppumodules.MicroswitchModule;
 import edu.kit.ipd.sdq.kamp.workplan.AbstractActivityElementType;
 import edu.kit.ipd.sdq.kamp.workplan.Activity;
 import edu.kit.ipd.sdq.kamp.workplan.BasicActivity;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityElementType;
 import edu.kit.ipd.sdq.kamp4aps.core.APSActivityType;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.MicroswitchModule;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.TurningTable;
-import edu.kit.ipd.sdq.kamp4aps.model.basic.Identifier;
-import edu.kit.ipd.sdq.kamp4aps.model.basic.NamedElement;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.Module;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.StructureRepository.Structure;
+import paradigm.basic.NamedElement;
 
 /**
  * 
@@ -101,7 +99,9 @@ public class APSSubactivityDerivation {
 
 	}
 
-	public static String generateDescription(Identifier superElement, Identifier subElement, BasicActivity action) {
+	public static String generateDescription(
+			paradigm.basic.Identifier superElement, 
+			paradigm.basic.Identifier subElement, BasicActivity action) {
 		String result = "";
 		if (action.equals(BasicActivity.ADD)) {
 			result += "Add ";

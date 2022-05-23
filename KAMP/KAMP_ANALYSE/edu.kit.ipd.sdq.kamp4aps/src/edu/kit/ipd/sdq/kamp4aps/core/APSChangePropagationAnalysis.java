@@ -1,5 +1,22 @@
 package edu.kit.ipd.sdq.kamp4aps.core;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import domain.aps.buscomponents.BusBox;
+import domain.aps.buscomponents.BusCable;
+import domain.aps.buscomponents.BusMaster;
+import domain.aps.intefaces.SignalInterface;
+import domain.aps.interfaces.PhysicalConnection;
+import domain.as.Component;
+import domain.as.Interface;
+import domain.ppu.ppumodules.MicroswitchModule;
+import edu.kit.ipd.sdq.kamp.model.modificationmarks.ChangePropagationStep;
+import edu.kit.ipd.sdq.kamp.propagation.AbstractChangePropagationAnalysis;
 import edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup.BusComponentsParams;
 import edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ComponentChanges;
 import edu.kit.ipd.sdq.kamp4aps.core.changepropagation.InterfaceChanges;
@@ -11,63 +28,19 @@ import edu.kit.ipd.sdq.kamp4aps.core.scenarios.ScrewingChanges;
 import edu.kit.ipd.sdq.kamp4aps.core.scenarios.SensorChanges;
 import edu.kit.ipd.sdq.kamp4aps.core.scenarios.SignalInterfacePropagation;
 import edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ChangePropagationDueToHardwareChange;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusBox;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusCable;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusMaster;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyBusSlave;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyInterface;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.KAMP4aPSModificationmarksFactory;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusBox;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusCable;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusMaster;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusSlave;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.MicroswitchModule;
 import edu.kit.ipd.sdq.kamp4iec.core.IECArchitectureVersion;
-import edu.kit.ipd.sdq.kamp4iec.core.IECArchitectureVersionPersistency;
-import edu.kit.ipd.sdq.kamp4iec.core.IECArchitectureVersion.ArchitectureVersionParams;
 import edu.kit.ipd.sdq.kamp4iec.core.IECChangePropagationAnalysis;
 import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECChangePropagationDueToDataDependency;
 import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModificationmarksFactory;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyAbstractMethod;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyAbstractProperty;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyConfiguration;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyFunction;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyFunctionBlock;
 import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyGlobalVariable;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyInterface;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyMethod;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyProgram;
-import edu.kit.ipd.sdq.kamp4iec.model.IECModificationmarks.IECModifyProperty;
 import edu.kit.ipd.sdq.kamp4iec.model.IECRepository.IECComponent;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Sensor;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.PhysicalConnection;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.SignalInterface;
-
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.eclipse.emf.common.notify.Adapter;
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.common.util.TreeIterator;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EOperation;
-import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.ecore.resource.Resource;
-
-import edu.kit.ipd.sdq.kamp.model.modificationmarks.ChangePropagationStep;
-import edu.kit.ipd.sdq.kamp.propagation.AbstractChangePropagationAnalysis;
+import omain.aps.buscomponents.BusSlave;
+import quality.aps_mm.ModifyBusBox;
+import quality.as_mm.ChangePropagationDueToHardwareChange;
+import quality.as_mm.ModifyBusCable;
+import quality.as_mm.ModifyBusMaster;
+import quality.as_mm.ModifyBusSlave;
+import quality.as_mm.ModifyInterface;
 /**
  * The change propagation analysis of KAMP4APS
  * 1. determines a seed population of affected components (resp. provided roles)
@@ -186,7 +159,7 @@ public class APSChangePropagationAnalysis implements AbstractChangePropagationAn
 
 		private void addSensorModifications(Collection<SignalInterface> signalInterfaceToChange,
 				Collection<PhysicalConnection> physicalConnectionToChange) {
-			for (Sensor sensor : scenarioZero.getInitialMarkedSensors()) {
+			for (domain.aps.components.Sensor sensor : scenarioZero.getInitialMarkedSensors()) {
 				scenarioZero.addSensorModificationToChangePropagation(sensor, 
 						changePropagationDueToHardwareChange,
 						signalInterfaceToChange,

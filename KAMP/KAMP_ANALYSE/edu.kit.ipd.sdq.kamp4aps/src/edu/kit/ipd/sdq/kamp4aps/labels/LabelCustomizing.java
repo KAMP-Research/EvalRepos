@@ -1,18 +1,17 @@
 package edu.kit.ipd.sdq.kamp4aps.labels;
 
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyComponent;
-import edu.kit.ipd.sdq.kamp4aps.model.KAMP4aPSModificationmarks.ModifyInterface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusBox;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusCable;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusMaster;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.BusComponents.BusSlave;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Component;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ModuleRepository.MicroswitchModule;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.PowerSupply;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.ComponentRepository.Sensor;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.Interface;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.PhysicalConnection;
-import edu.kit.ipd.sdq.kamp4aps.model.aPS.InterfaceRepository.SignalInterface;
+import domain.aps.buscomponents.BusBox;
+import domain.aps.buscomponents.BusCable;
+import domain.aps.buscomponents.BusMaster;
+import domain.aps.components.PowerSupply;
+import domain.aps.intefaces.SignalInterface;
+import domain.aps.interfaces.PhysicalConnection;
+import domain.as.Component;
+import domain.as.Interface;
+import domain.ppu.ppumodules.MicroswitchModule;
+import omain.aps.buscomponents.BusSlave;
+import quality.as_mm.ModifyComponent;
+import quality.as_mm.ModifyInterface;
 
 public class LabelCustomizing {
 
@@ -78,8 +77,8 @@ public class LabelCustomizing {
 	}
 
 	private static String customizeSensor(ModifyComponent<Component> modification) {
-		if (modification.getAffectedElement() instanceof Sensor) {
-			Sensor sensor = (Sensor) modification.getAffectedElement();
+		if (modification.getAffectedElement() instanceof domain.aps.components.Sensor) {
+			domain.aps.components.Sensor sensor = (domain.aps.components.Sensor) modification.getAffectedElement();
 			return getOutputString(sensor.getId());
 		}
 		return "";
@@ -144,7 +143,7 @@ public class LabelCustomizing {
 		return modification.getAffectedElement() != null;
 	}
 
-	public static String getName(edu.kit.ipd.sdq.kamp4aps.model.basic.NamedElement architectureElement) {
+	public static String getName(paradigm.basic.NamedElement architectureElement) {
 		return architectureElement.getName();
 	}
 
