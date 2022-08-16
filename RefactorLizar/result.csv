@@ -1,0 +1,11 @@
+Scenario;Broken Modularity;Deficient Encapsulation;Feature Scatter Analyzer;Duplicate Abstraction;Incomplete Abstraction;Missing Abstraction;Missing Modularity;Rebellious Modularity;Unexploited Hierarchy;Speculative Generality;Weakend Modularity;Folded Hierarchy
+4;0;3;0;0;0;20;1;0;223;0;0;4
+5;0;2;0;0;0;5;0;0;225;0;0;0
+11;0;0;0;0;0;0;0;0;27;0;0;7
+13;0;2;0;0;0;4;0;0;410;0;0;4
+15;0;0;0;0;0;4;0;0;158;0;0;0
+16;0;2;0;0;0;6;0;0;242;0;0;3
+17;0;2;0;0;0;6;0;0;255;0;0;7
+18;0;1;0;0;0;24;0;0;337;0;0;4
+20;0;2;0;0;0;6;0;0;383;0;0;0
+21;0;2;0;0;0;0;0;0;270;0;0;4

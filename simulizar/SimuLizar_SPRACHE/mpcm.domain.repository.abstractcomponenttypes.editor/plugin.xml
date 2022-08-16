@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated abstractcomponenttypes -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="abstractcomponenttypes.presentation.AbstractcomponenttypesModelWizardID"
+            name="%_UI_AbstractcomponenttypesModelWizard_label"
+            class="abstractcomponenttypes.presentation.AbstractcomponenttypesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AbstractcomponenttypesModelFile.gif">
+         <description>%_UI_AbstractcomponenttypesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated abstractcomponenttypes -->
+      <editor
+            id="abstractcomponenttypes.presentation.AbstractcomponenttypesEditorID"
+            name="%_UI_AbstractcomponenttypesEditor_label"
+            icon="icons/full/obj16/AbstractcomponenttypesModelFile.gif"
+            extensions="abstractcomponenttypes"
+            class="abstractcomponenttypes.presentation.AbstractcomponenttypesEditor"
+            contributorClass="abstractcomponenttypes.presentation.AbstractcomponenttypesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

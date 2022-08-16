@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated usage -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="usage.presentation.UsageModelWizardID"
+            name="%_UI_UsageModelWizard_label"
+            class="usage.presentation.UsageModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UsageModelFile.gif">
+         <description>%_UI_UsageModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated usage -->
+      <editor
+            id="usage.presentation.UsageEditorID"
+            name="%_UI_UsageEditor_label"
+            icon="icons/full/obj16/UsageModelFile.gif"
+            extensions="usage"
+            class="usage.presentation.UsageEditor"
+            contributorClass="usage.presentation.UsageActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find ./after -name "$1.java" -exec cat {} \; | grep package

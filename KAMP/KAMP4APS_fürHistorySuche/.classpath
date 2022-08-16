@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.deploymentcontext.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.deploymentcontext.editor/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.deploymentcontext.tests/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.deploymentcontext/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.editor/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations.tests/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.fieldofactivityannotations/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.modificationmarks.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.modificationmarks.editor/edu.kit.ipd.sdq.kamp4aps.model.modificationmarks.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.modificationmarks.editor/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.modificationmarks.tests/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps.model.modificationmarks/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4aps/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.componentInternalDependencies.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.componentInternalDependencies.editor/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.componentInternalDependencies.tests/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.componentInternalDependencies/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.editor/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.repo.edit/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.repo.editor/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.repo.tests/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.repo/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model.tests/src"/>
+	<classpathentry kind="src" path="edu.kit.ipd.sdq.kamp4iec.model/src"/>
+	<classpathentry kind="src" path="xPPU.edit/src"/>
+	<classpathentry kind="src" path="xPPU.editor/src"/>
+	<classpathentry kind="src" path="xPPU.tests/src"/>
+	<classpathentry kind="src" path="xPPU/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="edu.kit.ipd.sdq.kamp4aps/bin"/>
+</classpath>

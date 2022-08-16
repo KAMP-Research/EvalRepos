@@ -1,0 +1,405 @@
+Report [description=Found 19 feature scatter 
+Language Type:
+composition.AssemblyContext
+is used by types:
+	org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer at positions:
+ 		org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer#removeAssemblyAllocation  142
+		org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer#addAssemblyAllocation  108
+
+	org.palladiosimulator.simulizar.runtimestate.FQComponentID at positions:
+ 		org.palladiosimulator.simulizar.runtimestate.FQComponentID#hashCode  34
+		org.palladiosimulator.simulizar.runtimestate.FQComponentID#getAssembyContextPath  24
+		org.palladiosimulator.simulizar.runtimestate.FQComponentID#<init>  16
+		org.palladiosimulator.simulizar.runtimestate.FQComponentID#assembyContextPath  14
+
+	org.palladiosimulator.simulizar.interpreter.listener.AssemblyProvidedOperationPassedEvent at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AssemblyProvidedOperationPassedEvent#assemblyContext  11
+		org.palladiosimulator.simulizar.interpreter.listener.AssemblyProvidedOperationPassedEvent#getAssemblyContext  24
+		org.palladiosimulator.simulizar.interpreter.listener.AssemblyProvidedOperationPassedEvent#<init>  14
+
+	org.palladiosimulator.simulizar.tests.QVToReconfigurationTest at positions:
+ 		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addNewServer  145
+		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#outsource  245
+		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addClonedServer  178
+
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#getProcesses  476
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#interpretInfrastructureCalls  192
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#getAllocationContext  688
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseExternalCallAction  232
+
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseRequiredDelegationConnector  78
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseRequiredInfrastructureDelegationConnector  89
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#getConnectedConnector  112
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseAssemblyContext  100
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#<init>  62
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#generateSystemAssemblyContext  166
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#SYSTEM_ASSEMBLY_CONTEXT  50
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#getNestedComponentInstanceFromAssembly  241
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#caseProvidedRole  147
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#instanceAssemblyContext  57
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#caseBasicComponent  72
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#computeAssemblyContextPath  232
+
+	org.palladiosimulator.simulizar.runtimestate.SimulatedBasicComponentInstance at positions:
+ 		org.palladiosimulator.simulizar.runtimestate.SimulatedBasicComponentInstance#<init>  29
+
+	org.palladiosimulator.simulizar.interpreter.InterpreterDefaultContext at positions:
+ 		org.palladiosimulator.simulizar.interpreter.InterpreterDefaultContext#assemblyContextStack  30
+		org.palladiosimulator.simulizar.interpreter.InterpreterDefaultContext#getAssemblyContextStack  85
+
+	org.palladiosimulator.simulizar.interpreter.listener.RDSEFFElementPassedEvent at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.RDSEFFElementPassedEvent#getAssemblyContext  21
+		org.palladiosimulator.simulizar.interpreter.listener.RDSEFFElementPassedEvent#<init>  12
+		org.palladiosimulator.simulizar.interpreter.listener.RDSEFFElementPassedEvent#assemblyContext  10
+
+Language Type:
+softwareusage.UsageScenario
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#beginUsageScenarioInterpretation  35
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#endUsageScenarioInterpretation  46
+
+	org.palladiosimulator.simulizar.interpreter.UsageScenarioSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.UsageScenarioSwitch#caseUsageScenario  203
+
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#beginUsageScenarioInterpretation  95
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#endUsageScenarioInterpretation  107
+
+	org.palladiosimulator.simulizar.usagemodel.LoopingUsageEvolver at positions:
+ 		org.palladiosimulator.simulizar.usagemodel.LoopingUsageEvolver#<init>  35
+
+	org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#beginUsageScenarioInterpretation  36
+		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#endUsageScenarioInterpretation  48
+
+	org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver at positions:
+ 		org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver#<init>  56
+
+	org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels at positions:
+ 		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createOpenWorkloadDriver  94
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createWorkloadDrivers  44
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#getScenarioRunner  114
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createAndAddWorkloadDriver  54
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createClosedWorkloadDriver  74
+
+	org.palladiosimulator.simulizar.modelobserver.UsageModelSyncer at positions:
+ 		org.palladiosimulator.simulizar.modelobserver.UsageModelSyncer#syncUsageScenarioRemoval  124
+		org.palladiosimulator.simulizar.modelobserver.UsageModelSyncer#syncUsageScenarioAddition  115
+
+	org.palladiosimulator.simulizar.usagemodel.StretchedUsageEvolver at positions:
+ 		org.palladiosimulator.simulizar.usagemodel.StretchedUsageEvolver#<init>  34
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#USAGE_MODEL_NOTIFICATOR_SELECTOR  46
+
+	org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#beginUsageScenarioInterpretation  13
+		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#endUsageScenarioInterpretation  15
+
+	org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil at positions:
+ 		org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil#checkPCMMeasuringPoints  230
+
+Language Type:
+softwarerepository.OperationProvidedRole
+is used by types:
+	org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl at positions:
+ 		org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl#setControllerRole  157
+		org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl#getControllerRole  129
+		org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl#basicGetControllerRole  147
+		org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl#controllerRole  60
+		org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl#eUnset  306
+		org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl#eSet  285
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#REPOSITORY_NOTIFICATOR_SELECTOR  72
+
+	org.palladiosimulator.simulizar.action.mapping.ControllerMapping at positions:
+ 		org.palladiosimulator.simulizar.action.mapping.ControllerMapping#getControllerRole  72
+		org.palladiosimulator.simulizar.action.mapping.ControllerMapping#setControllerRole  82
+
+Language Type:
+composition.Connector
+is used by types:
+	org.palladiosimulator.simulizar.tests.QVToReconfigurationTest at positions:
+ 		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addClonedServer  178
+		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addNewServer  145
+
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#getConnectedConnector  112
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseAssemblyContext  100
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#getConnectedProvidedDelegationConnector  257
+
+Language Type:
+softwarecomposition.AssemblyConnector
+is used by types:
+	org.palladiosimulator.simulizar.tests.QVToReconfigurationTest at positions:
+ 		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addClonedServer  178
+		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addNewServer  145
+
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseAssemblyConnector  53
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#getConnectedConnector  112
+
+Language Type:
+base.NamedElement
+is used by types:
+	org.palladiosimulator.simulizar.tests.QVToReconfigurationTest at positions:
+ 		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addNewServer  145
+		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#addClonedServer  178
+
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseReleaseAction  414
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseAcquireAction  391
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#generateSystemAssemblyContext  166
+
+Language Type:
+performance.seff.ResourceDemandingSEFF
+is used by types:
+	org.palladiosimulator.simulizar.tests.QVToReconfigurationTest at positions:
+ 		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#outsource  245
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#interpretSeffs  201
+
+Language Type:
+softwarerepository.BasicComponent
+is used by types:
+	org.palladiosimulator.simulizar.tests.QVToReconfigurationTest at positions:
+ 		org.palladiosimulator.simulizar.tests.QVToReconfigurationTest#outsource  245
+
+	org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl at positions:
+ 		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#getComponent  86
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#setComponent  114
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#component  49
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#eSet  287
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#basicGetComponent  104
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#eUnset  308
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#caseBasicComponent  72
+
+	org.palladiosimulator.simulizar.action.core.ControllerCall at positions:
+ 		org.palladiosimulator.simulizar.action.core.ControllerCall#getComponent  45
+		org.palladiosimulator.simulizar.action.core.ControllerCall#setComponent  55
+
+Language Type:
+softwareusage.EntryLevelSystemCall
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.UsageScenarioSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.UsageScenarioSwitch#caseEntryLevelSystemCall  90
+
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#beginEntryLevelSystemCallInterpretation  57
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#endEntryLevelSystemCallInterpretation  68
+
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#endEntryLevelSystemCallInterpretation  131
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#beginEntryLevelSystemCallInterpretation  119
+
+	org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#endEntryLevelSystemCallInterpretation  72
+		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#beginEntryLevelSystemCallInterpretation  60
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#USAGE_MODEL_NOTIFICATOR_SELECTOR  46
+
+	org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#beginEntryLevelSystemCallInterpretation  17
+		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#endEntryLevelSystemCallInterpretation  19
+
+	org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil at positions:
+ 		org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil#checkPCMMeasuringPoints  230
+
+Language Type:
+behaviourseff.ExternalCallAction
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseExternalCallAction  232
+
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#endExternalCallInterpretation  90
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#beginExternalCallInterpretation  79
+
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#endExternalCallInterpretation  155
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#beginExternalCallInterpretation  143
+
+	org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#beginExternalCallInterpretation  84
+		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#endExternalCallInterpretation  96
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#SEFF_NOTIFICATOR_SELECTOR  97
+
+	org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#beginExternalCallInterpretation  21
+		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#endExternalCallInterpretation  23
+
+	org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil at positions:
+ 		org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil#checkPCMMeasuringPoints  230
+
+Language Type:
+softwarerepository.OperationSignature
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#beginSystemOperationCallInterpretation  102
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#endSystemOperationCallInterpretation  106
+
+	org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl at positions:
+ 		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#basicGetCalledSignature  146
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#eUnset  308
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#eSet  287
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#setCalledSignature  156
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#getCalledSignature  128
+		org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl#calledSignature  59
+
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#beginSystemOperationCallInterpretation  314
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#endSystemOperationCallInterpretation  323
+
+	org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#beginSystemOperationCallInterpretation  111
+		org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener#endSystemOperationCallInterpretation  116
+
+	org.palladiosimulator.simulizar.action.core.ControllerCall at positions:
+ 		org.palladiosimulator.simulizar.action.core.ControllerCall#getCalledSignature  71
+		org.palladiosimulator.simulizar.action.core.ControllerCall#setCalledSignature  81
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#REPOSITORY_NOTIFICATOR_SELECTOR  72
+
+	org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#endSystemOperationCallInterpretation  31
+		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#beginSystemOperationCallInterpretation  29
+
+Language Type:
+environment.LinkingResource
+is used by types:
+	org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest at positions:
+ 		org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testSyncLinkingResource  183
+		org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testInitialize  100
+
+	org.palladiosimulator.simulizar.test.SimuLizarMockUtils at positions:
+ 		org.palladiosimulator.simulizar.test.SimuLizarMockUtils#createMock  178
+
+	org.palladiosimulator.simulizar.modelobserver.ResourceEnvironmentSyncer at positions:
+ 		org.palladiosimulator.simulizar.modelobserver.ResourceEnvironmentSyncer#add  95
+		org.palladiosimulator.simulizar.modelobserver.ResourceEnvironmentSyncer#createSimulatedLinkingResource  214
+
+Language Type:
+repository.util.RepositorySwitch
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#doSwitch  276
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#<init>  62
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#REPOSITORY_NOTIFICATOR_SELECTOR  72
+		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#NOTIFICATOR_SELECTOR_SWITCHES  119
+
+	org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil at positions:
+ 		org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil#checkPCMMeasuringPoints  230
+
+Language Type:
+seff.util.SeffSwitch
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#<init>  88
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#getProcesses  476
+
+	org.palladiosimulator.simulizar.interpreter.EventNotificationHelper at positions:
+ 		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#NOTIFICATOR_SELECTOR_SWITCHES  119
+		org.palladiosimulator.simulizar.interpreter.EventNotificationHelper#SEFF_NOTIFICATOR_SELECTOR  97
+
+	org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil at positions:
+ 		org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil#checkPCMMeasuringPoints  230
+
+Language Type:
+variables.PCMRandomVariable
+is used by types:
+	org.palladiosimulator.simulizar.utils.TransitionDeterminer at positions:
+ 		org.palladiosimulator.simulizar.utils.TransitionDeterminer#conditionHolds  53
+		org.palladiosimulator.simulizar.utils.TransitionDeterminer#determineGuardedBranchTransition  108
+
+	org.palladiosimulator.simulizar.utils.SimulatedStackHelper at positions:
+ 		org.palladiosimulator.simulizar.utils.SimulatedStackHelper#addParameterToStackFrame  41
+
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseLoopAction  348
+
+	org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver at positions:
+ 		org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver#evolveLoad  193
+
+Language Type:
+repository.ProvidedRole
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#endAssemblyProvidedOperationCallInterpretation  116
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#beginAssemblyProvidedOperationCallInterpretation  111
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#caseProvidedRole  147
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#getConnectedProvidedDelegationConnector  257
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#caseComposedProvidingRequiringEntity  116
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#generateSystemAssemblyContext  166
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#<init>  62
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#providedRole  55
+
+	org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#beginAssemblyProvidedOperationCallInterpretation  33
+		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#endAssemblyProvidedOperationCallInterpretation  35
+
+Language Type:
+repository.Signature
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#beginAssemblyProvidedOperationCallInterpretation  111
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener#endAssemblyProvidedOperationCallInterpretation  116
+
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#<init>  44
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#signature  35
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#<init>  62
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#signature  54
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#getSeffsForCall  183
+
+	org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener at positions:
+ 		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#beginAssemblyProvidedOperationCallInterpretation  33
+		org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener#endAssemblyProvidedOperationCallInterpretation  35
+
+Language Type:
+composition.util.CompositionSwitch
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#interpretInfrastructureCalls  192
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseExternalCallAction  232
+
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseRequiredDelegationConnector  78
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#getConnectedConnector  112
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#<init>  44
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseAssemblyContext  100
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseRequiredInfrastructureDelegationConnector  89
+
+Language Type:
+composition.ComposedStructure
+is used by types:
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#getConnectedConnector  112
+
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch at positions:
+ 		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#getNestedComponentInstanceFromAssembly  241
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#getConnectedProvidedDelegationConnector  257
+
+, smellFound=true, solutions=[], text=Feature Scatter Analyzer on type level]

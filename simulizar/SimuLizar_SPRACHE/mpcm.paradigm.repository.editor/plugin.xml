@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated repository -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="repository.presentation.RepositoryModelWizardID"
+            name="%_UI_RepositoryModelWizard_label"
+            class="repository.presentation.RepositoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RepositoryModelFile.gif">
+         <description>%_UI_RepositoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated repository -->
+      <editor
+            id="repository.presentation.RepositoryEditorID"
+            name="%_UI_RepositoryEditor_label"
+            icon="icons/full/obj16/RepositoryModelFile.gif"
+            extensions="repository"
+            class="repository.presentation.RepositoryEditor"
+            contributorClass="repository.presentation.RepositoryActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated repository -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="repository.datatypes.presentation.DatatypesModelWizardID"
+            name="%_UI_DatatypesModelWizard_label"
+            class="repository.datatypes.presentation.DatatypesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DatatypesModelFile.gif">
+         <description>%_UI_DatatypesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated repository -->
+      <editor
+            id="repository.datatypes.presentation.DatatypesEditorID"
+            name="%_UI_DatatypesEditor_label"
+            icon="icons/full/obj16/DatatypesModelFile.gif"
+            extensions="datatypes"
+            class="repository.datatypes.presentation.DatatypesEditor"
+            contributorClass="repository.datatypes.presentation.DatatypesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

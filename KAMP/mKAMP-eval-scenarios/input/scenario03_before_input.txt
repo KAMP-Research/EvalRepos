@@ -1,0 +1,7 @@
+edu.kit.ipd.sdq.kamp4aps/bin/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SwitchChanges.class
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSArchitectureModelLookup.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSChangePropagationAnalysis.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/derivation/APSSubactivityDerivation.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/MicroSwitchModuleChange.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SwitchChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/labels/LabelCustomizing.java

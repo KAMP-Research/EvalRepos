@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mkamp.quality.aps.mm/src-gen" modelPluginID="mkamp.quality.aps.mm"
+    modelName="Apsmm" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../mkamp.domain.aps/model/aps.genmodel#//aps ../../mkamp.domain.as/model/as.genmodel#//as ../../mkamp.quality.as.mm/model/as.mm.genmodel#//as_mm ../../mkamp.paradigm.basic/model/basic.genmodel#//basic ../../mkamp.paradigm.modificationmarks/model/Modificationmarks.genmodel#//modificationmarks"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>apsmm.ecore</foreignModel>
+  <genPackages prefix="Aps_mm" basePackage="quality" disposableProviderFactory="true"
+      ecorePackage="apsmm.ecore#/">
+    <genClasses ecoreClass="apsmm.ecore#//ModifyBusMaster"/>
+    <genClasses ecoreClass="apsmm.ecore#//ModifyPhysicalConnection"/>
+    <genClasses ecoreClass="apsmm.ecore#//ModifySignalinterface"/>
+    <genClasses ecoreClass="apsmm.ecore#//ModifySensor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference apsmm.ecore#//ModifySensor/modifySignalInterfaces"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference apsmm.ecore#//ModifySensor/modifyPhysicalConnections"/>
+    </genClasses>
+    <genClasses ecoreClass="apsmm.ecore#//ModifyBusSlave"/>
+    <genClasses ecoreClass="apsmm.ecore#//ModifyRamp"/>
+    <genClasses ecoreClass="apsmm.ecore#//ModifyBusCable"/>
+    <genClasses ecoreClass="apsmm.ecore#//ModifyBusBox"/>
+  </genPackages>
+</genmodel:GenModel>

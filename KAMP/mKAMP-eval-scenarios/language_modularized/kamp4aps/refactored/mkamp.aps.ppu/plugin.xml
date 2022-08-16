@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps.ppu -->
+      <package
+            uri="ppucomponents"
+            class="domain.ppu.ppucomponents.PpucomponentsPackage"
+            genModel="model/aps.ppu.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps.ppu -->
+      <package
+            uri="ppubuscomponents"
+            class="domain.ppu.ppubuscomponents.PpubuscomponentsPackage"
+            genModel="model/aps.ppu.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps.ppu -->
+      <package
+            uri="ppumechanicalcomponents"
+            class="domain.ppu.ppumechanicalcomponents.PpumechanicalcomponentsPackage"
+            genModel="model/aps.ppu.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps.ppu -->
+      <package
+            uri="ppustructures"
+            class="domain.ppu.ppustructures.PpustructuresPackage"
+            genModel="model/aps.ppu.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps.ppu -->
+      <package
+            uri="ppumodules"
+            class="domain.ppu.ppumodules.PpumodulesPackage"
+            genModel="model/aps.ppu.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps.ppu -->
+      <package
+            uri="ppuinterfaces"
+            class="domain.ppu.ppuinterfaces.PpuinterfacesPackage"
+            genModel="model/aps.ppu.genmodel"/>
+   </extension>
+
+</plugin>

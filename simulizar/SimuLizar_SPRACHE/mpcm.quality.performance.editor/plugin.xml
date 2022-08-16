@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated performance -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="performance.seff.presentation.SeffModelWizardID"
+            name="%_UI_SeffModelWizard_label"
+            class="performance.seff.presentation.SeffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SeffModelFile.gif">
+         <description>%_UI_SeffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated performance -->
+      <editor
+            id="performance.seff.presentation.SeffEditorID"
+            name="%_UI_SeffEditor_label"
+            icon="icons/full/obj16/SeffModelFile.gif"
+            extensions="seff"
+            class="performance.seff.presentation.SeffEditor"
+            contributorClass="performance.seff.presentation.SeffActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated performance -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="performance.resources.presentation.ResourcesModelWizardID"
+            name="%_UI_ResourcesModelWizard_label"
+            class="performance.resources.presentation.ResourcesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ResourcesModelFile.gif">
+         <description>%_UI_ResourcesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated performance -->
+      <editor
+            id="performance.resources.presentation.ResourcesEditorID"
+            name="%_UI_ResourcesEditor_label"
+            icon="icons/full/obj16/ResourcesModelFile.gif"
+            extensions="resources"
+            class="performance.resources.presentation.ResourcesEditor"
+            contributorClass="performance.resources.presentation.ResourcesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   
+   <extension
+         id="smartgrid.simcontrol.test.extensionpoints.impactAnalysis"
+         name="impactAnalysis"
+         point="smartgrid.simcontrol.test.extensionpoints.impactAnalysis">
+      <impactAnalysis
+            class="smartgrid.impactanalysis.GraphAnalyzer">
+      </impactAnalysis>
+   </extension>
+
+   
+
+
+
+</plugin>

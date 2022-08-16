@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated internalbehaviour -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="internalbehaviour.presentation.InternalbehaviourModelWizardID"
+            name="%_UI_InternalbehaviourModelWizard_label"
+            class="internalbehaviour.presentation.InternalbehaviourModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/InternalbehaviourModelFile.gif">
+         <description>%_UI_InternalbehaviourModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated internalbehaviour -->
+      <editor
+            id="internalbehaviour.presentation.InternalbehaviourEditorID"
+            name="%_UI_InternalbehaviourEditor_label"
+            icon="icons/full/obj16/InternalbehaviourModelFile.gif"
+            extensions="internalbehaviour"
+            class="internalbehaviour.presentation.InternalbehaviourEditor"
+            contributorClass="internalbehaviour.presentation.InternalbehaviourActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

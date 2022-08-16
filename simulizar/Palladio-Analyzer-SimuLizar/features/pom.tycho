@@ -1,0 +1,6 @@
+## tycho automatic module detection
+org.palladiosimulator.simulizar.feature
+org.palladiosimulator.simulizar.monitorrepository.map.feature
+org.palladiosimulator.simulizar.reconfiguration.henshin.feature
+org.palladiosimulator.simulizar.reconfiguration.qvto.feature
+org.palladiosimulator.simulizar.reconfiguration.storydiagram.feature

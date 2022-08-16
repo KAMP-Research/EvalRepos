@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated events -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="events.repository.presentation.RepositoryModelWizardID"
+            name="%_UI_RepositoryModelWizard_label"
+            class="events.repository.presentation.RepositoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RepositoryModelFile.gif">
+         <description>%_UI_RepositoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated events -->
+      <editor
+            id="events.repository.presentation.RepositoryEditorID"
+            name="%_UI_RepositoryEditor_label"
+            icon="icons/full/obj16/RepositoryModelFile.gif"
+            extensions="repository"
+            class="events.repository.presentation.RepositoryEditor"
+            contributorClass="events.repository.presentation.RepositoryActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated events -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="events.seff.presentation.SeffModelWizardID"
+            name="%_UI_SeffModelWizard_label"
+            class="events.seff.presentation.SeffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SeffModelFile.gif">
+         <description>%_UI_SeffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated events -->
+      <editor
+            id="events.seff.presentation.SeffEditorID"
+            name="%_UI_SeffEditor_label"
+            icon="icons/full/obj16/SeffModelFile.gif"
+            extensions="seff"
+            class="events.seff.presentation.SeffEditor"
+            contributorClass="events.seff.presentation.SeffActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated events -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="events.composition.presentation.CompositionModelWizardID"
+            name="%_UI_CompositionModelWizard_label"
+            class="events.composition.presentation.CompositionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CompositionModelFile.gif">
+         <description>%_UI_CompositionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated events -->
+      <editor
+            id="events.composition.presentation.CompositionEditorID"
+            name="%_UI_CompositionEditor_label"
+            icon="icons/full/obj16/CompositionModelFile.gif"
+            extensions="composition"
+            class="events.composition.presentation.CompositionEditor"
+            contributorClass="events.composition.presentation.CompositionActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated events -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="events.allocation.presentation.AllocationModelWizardID"
+            name="%_UI_AllocationModelWizard_label"
+            class="events.allocation.presentation.AllocationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AllocationModelFile.gif">
+         <description>%_UI_AllocationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated events -->
+      <editor
+            id="events.allocation.presentation.AllocationEditorID"
+            name="%_UI_AllocationEditor_label"
+            icon="icons/full/obj16/AllocationModelFile.gif"
+            extensions="allocation"
+            class="events.allocation.presentation.AllocationEditor"
+            contributorClass="events.allocation.presentation.AllocationActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

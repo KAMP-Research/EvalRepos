@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated reliabilityannotations -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="reliabilityannotations.presentation.ReliabilityannotationsModelWizardID"
+            name="%_UI_ReliabilityannotationsModelWizard_label"
+            class="reliabilityannotations.presentation.ReliabilityannotationsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ReliabilityannotationsModelFile.gif">
+         <description>%_UI_ReliabilityannotationsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated reliabilityannotations -->
+      <editor
+            id="reliabilityannotations.presentation.ReliabilityannotationsEditorID"
+            name="%_UI_ReliabilityannotationsEditor_label"
+            icon="icons/full/obj16/ReliabilityannotationsModelFile.gif"
+            extensions="reliabilityannotations"
+            class="reliabilityannotations.presentation.ReliabilityannotationsEditor"
+            contributorClass="reliabilityannotations.presentation.ReliabilityannotationsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated behaviourseff -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="behaviourseff.presentation.BehaviourseffModelWizardID"
+            name="%_UI_BehaviourseffModelWizard_label"
+            class="behaviourseff.presentation.BehaviourseffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BehaviourseffModelFile.gif">
+         <description>%_UI_BehaviourseffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated behaviourseff -->
+      <editor
+            id="behaviourseff.presentation.BehaviourseffEditorID"
+            name="%_UI_BehaviourseffEditor_label"
+            icon="icons/full/obj16/BehaviourseffModelFile.gif"
+            extensions="behaviourseff"
+            class="behaviourseff.presentation.BehaviourseffEditor"
+            contributorClass="behaviourseff.presentation.BehaviourseffActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

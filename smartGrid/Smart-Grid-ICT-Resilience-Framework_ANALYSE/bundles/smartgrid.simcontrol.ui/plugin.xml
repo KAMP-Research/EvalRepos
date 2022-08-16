@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="smartgrid.newsimcontrol.ui.launchconfig.AbstractSimcontrolTabGroup"
+            id="smartgrid.newsimcontrol.ui.AbstractSimcontrolTabGroup"
+            type="smartgrid.newsimcontrol.SimcontrolLaunchConfigurationType">
+            
+            <launchMode 
+                  mode="debug"
+                  perspective="org.eclipse.debug.ui.DebugPerspective"
+                  description="">
+            </launchMode>
+            <launchMode
+                  mode="run"
+                  description="">
+            </launchMode>
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="smartgrid.simcontrol.test.ui.toolbar">
+            <command
+                  commandId="smartgrid.simcontrol.test.ui.interruptCommand"
+                  icon="icons/skull.gif"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="smartgrid.newsimcontrol.ui.toolbar.InterruptButtonHandler"
+            id="smartgrid.simcontrol.test.ui.interruptCommand"
+            name="Free all Simulations">
+      </command>
+   </extension>
+   
+   
+
+
+
+</plugin>

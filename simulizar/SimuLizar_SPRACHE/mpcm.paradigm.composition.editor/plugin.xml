@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated composition -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="composition.presentation.CompositionModelWizardID"
+            name="%_UI_CompositionModelWizard_label"
+            class="composition.presentation.CompositionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CompositionModelFile.gif">
+         <description>%_UI_CompositionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated composition -->
+      <editor
+            id="composition.presentation.CompositionEditorID"
+            name="%_UI_CompositionEditor_label"
+            icon="icons/full/obj16/CompositionModelFile.gif"
+            extensions="composition"
+            class="composition.presentation.CompositionEditor"
+            contributorClass="composition.presentation.CompositionActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

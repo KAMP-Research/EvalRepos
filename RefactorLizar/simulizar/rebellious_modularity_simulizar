@@ -1,0 +1,27 @@
+Report [description=Type org.palladiosimulator.simulizar.tests.QVToReconfigurationTest produces a language blob
+	mpcm.domain.composition, mpcm.paradigm.base, mpcm.quality.performance, mpcm.paradigm.composition, mpcm.domain.repository
+Type org.palladiosimulator.simulizar.interpreter.listener.LogDebugListener produces a language blob
+	mpcm.domain.usage, mpcm.domain.repository, mpcm.domain.seff
+Type org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil produces a language blob
+	mpcm.domain.usage, mpcm.paradigm.repository, mpcm.domain.seff, mpcm.paradigm.seff
+Type org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver produces a language blob
+	mpcm.domain.usage, mpcm.paradigm.variables
+Type org.palladiosimulator.simulizar.interpreter.listener.AssemblyProvidedOperationPassedEvent produces a language blob
+	mpcm.paradigm.repository, mpcm.paradigm.composition
+Type org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer produces a language blob
+	mpcm.paradigm.repository, mpcm.paradigm.composition
+Type org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener produces a language blob
+	mpcm.domain.usage, mpcm.domain.seff, mpcm.domain.repository
+Type org.palladiosimulator.simulizar.interpreter.listener.IInterpreterListener produces a language blob
+	mpcm.domain.usage, mpcm.paradigm.repository, mpcm.domain.repository, mpcm.domain.seff
+Type org.palladiosimulator.simulizar.interpreter.listener.AbstractInterpreterListener produces a language blob
+	mpcm.domain.usage, mpcm.paradigm.repository, mpcm.domain.repository, mpcm.domain.seff
+Type org.palladiosimulator.simulizar.interpreter.RDSeffSwitch produces a language blob
+	mpcm.paradigm.repository, mpcm.paradigm.variables, mpcm.paradigm.base, mpcm.quality.performance, mpcm.paradigm.composition, mpcm.paradigm.seff, mpcm.domain.seff
+Type org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch produces a language blob
+	mpcm.domain.composition, mpcm.paradigm.repository, mpcm.paradigm.composition
+Type org.palladiosimulator.simulizar.interpreter.EventNotificationHelper produces a language blob
+	mpcm.domain.usage, mpcm.paradigm.repository, mpcm.paradigm.seff, mpcm.domain.seff, mpcm.domain.repository
+Type org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch produces a language blob
+	mpcm.domain.composition, mpcm.paradigm.base, mpcm.paradigm.repository, mpcm.quality.performance, mpcm.paradigm.composition, mpcm.domain.repository
+, smellFound=true, solutions=[], text=13 language blobs found]

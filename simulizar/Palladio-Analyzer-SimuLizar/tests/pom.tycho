@@ -1,0 +1,4 @@
+## tycho automatic module detection
+org.palladiosimulator.simulizar.monitorrepository.map.tests
+org.palladiosimulator.simulizar.slidingwindow.tests
+org.palladiosimulator.simulizar.tests

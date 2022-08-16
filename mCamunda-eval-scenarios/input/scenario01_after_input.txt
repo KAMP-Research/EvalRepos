@@ -1,0 +1,8 @@
+engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/dto/externaltask/ExternalTaskFailureDto.java
+engine-rest/engine-rest/src/main/java/org/camunda/bpm/engine/rest/sub/externaltask/impl/ExternalTaskResourceImpl.java
+model-api/bpmn-model/src/main/java/org/camunda/bpm/model/bpmn/Bpmn.java
+model-api/bpmn-model/src/main/java/org/camunda/bpm/model/bpmn/builder/AbstractServiceTaskBuilder.java
+model-api/bpmn-model/src/main/java/org/camunda/bpm/model/bpmn/builder/CamundaErrorEventDefinitionBuilder.java
+model-api/bpmn-model/src/main/java/org/camunda/bpm/model/bpmn/impl/BpmnModelConstants.java
+model-api/bpmn-model/src/main/java/org/camunda/bpm/model/bpmn/impl/instance/camunda/CamundaErrorEventDefinitionImpl.java
+model-api/bpmn-model/src/main/java/org/camunda/bpm/model/bpmn/instance/camunda/CamundaErrorEventDefinition.java

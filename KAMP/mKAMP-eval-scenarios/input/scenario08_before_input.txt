@@ -1,0 +1,6 @@
+edu.kit.ipd.sdq.kamp4aps/META-INF/MANIFEST.MF
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSArchitectureModelFactoryFacade.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSArchitectureVersion.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSArchitectureVersionPersistency.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSChangePropagationAnalysis.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/InterfaceChanges.java

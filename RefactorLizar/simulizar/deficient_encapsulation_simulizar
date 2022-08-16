@@ -1,0 +1,35 @@
+Report [description=org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testInitialize
+org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testSyncLinkingResource
+
+environment.LinkingResource, org.palladiosimulator.simulizar.runtimestate.AbstractSimuLizarRuntimeState 4
+
+
+org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testInitialize
+
+environment.LinkingResource, environment.resources.ResourceContainer 4
+
+
+org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testInitialize
+
+environment.LinkingResource, org.palladiosimulator.pcm.resourceenvironment.ProcessingResourceSpecification 4
+
+
+org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createClosedWorkloadDriver
+org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createOpenWorkloadDriver
+
+org.palladiosimulator.pcm.usagemodel.Workload, softwareusage.UsageScenario 4
+
+
+org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testInitialize
+org.palladiosimulator.simulizar.modelobserver.tests.ResourceEnvironmentSyncerTest#testSyncLinkingResource
+
+de.uka.ipd.sdq.simucomframework.ResourceRegistry, environment.LinkingResource 4
+
+
+org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer#addAssemblyAllocation
+org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer#removeAssemblyAllocation
+
+composition.AssemblyContext, java.util.List 4
+
+
+, smellFound=true, solutions=[], text=dataclumbs]

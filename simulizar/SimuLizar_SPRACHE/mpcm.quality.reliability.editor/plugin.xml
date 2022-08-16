@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated reliability -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="reliability.seff.presentation.SeffModelWizardID"
+            name="%_UI_SeffModelWizard_label"
+            class="reliability.seff.presentation.SeffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SeffModelFile.gif">
+         <description>%_UI_SeffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated reliability -->
+      <editor
+            id="reliability.seff.presentation.SeffEditorID"
+            name="%_UI_SeffEditor_label"
+            icon="icons/full/obj16/SeffModelFile.gif"
+            extensions="seff"
+            class="reliability.seff.presentation.SeffEditor"
+            contributorClass="reliability.seff.presentation.SeffActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated reliability -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="reliability.repository.presentation.RepositoryModelWizardID"
+            name="%_UI_RepositoryModelWizard_label"
+            class="reliability.repository.presentation.RepositoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RepositoryModelFile.gif">
+         <description>%_UI_RepositoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated reliability -->
+      <editor
+            id="reliability.repository.presentation.RepositoryEditorID"
+            name="%_UI_RepositoryEditor_label"
+            icon="icons/full/obj16/RepositoryModelFile.gif"
+            extensions="repository"
+            class="reliability.repository.presentation.RepositoryEditor"
+            contributorClass="reliability.repository.presentation.RepositoryActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated reliability -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="reliability.failuretypes.presentation.FailuretypesModelWizardID"
+            name="%_UI_FailuretypesModelWizard_label"
+            class="reliability.failuretypes.presentation.FailuretypesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FailuretypesModelFile.gif">
+         <description>%_UI_FailuretypesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated reliability -->
+      <editor
+            id="reliability.failuretypes.presentation.FailuretypesEditorID"
+            name="%_UI_FailuretypesEditor_label"
+            icon="icons/full/obj16/FailuretypesModelFile.gif"
+            extensions="failuretypes"
+            class="reliability.failuretypes.presentation.FailuretypesEditor"
+            contributorClass="reliability.failuretypes.presentation.FailuretypesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated reliability -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="reliability.resources.presentation.ResourcesModelWizardID"
+            name="%_UI_ResourcesModelWizard_label"
+            class="reliability.resources.presentation.ResourcesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ResourcesModelFile.gif">
+         <description>%_UI_ResourcesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated reliability -->
+      <editor
+            id="reliability.resources.presentation.ResourcesEditorID"
+            name="%_UI_ResourcesEditor_label"
+            icon="icons/full/obj16/ResourcesModelFile.gif"
+            extensions="resources"
+            class="reliability.resources.presentation.ResourcesEditor"
+            contributorClass="reliability.resources.presentation.ResourcesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

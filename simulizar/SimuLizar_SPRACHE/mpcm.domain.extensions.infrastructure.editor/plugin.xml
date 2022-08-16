@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated infrastructure -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="infrastructure.repository.presentation.RepositoryModelWizardID"
+            name="%_UI_RepositoryModelWizard_label"
+            class="infrastructure.repository.presentation.RepositoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RepositoryModelFile.gif">
+         <description>%_UI_RepositoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated infrastructure -->
+      <editor
+            id="infrastructure.repository.presentation.RepositoryEditorID"
+            name="%_UI_RepositoryEditor_label"
+            icon="icons/full/obj16/RepositoryModelFile.gif"
+            extensions="repository"
+            class="infrastructure.repository.presentation.RepositoryEditor"
+            contributorClass="infrastructure.repository.presentation.RepositoryActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated infrastructure -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="infrastructure.seff.presentation.SeffModelWizardID"
+            name="%_UI_SeffModelWizard_label"
+            class="infrastructure.seff.presentation.SeffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SeffModelFile.gif">
+         <description>%_UI_SeffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated infrastructure -->
+      <editor
+            id="infrastructure.seff.presentation.SeffEditorID"
+            name="%_UI_SeffEditor_label"
+            icon="icons/full/obj16/SeffModelFile.gif"
+            extensions="seff"
+            class="infrastructure.seff.presentation.SeffEditor"
+            contributorClass="infrastructure.seff.presentation.SeffActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated infrastructure -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="infrastructure.composition.presentation.CompositionModelWizardID"
+            name="%_UI_CompositionModelWizard_label"
+            class="infrastructure.composition.presentation.CompositionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CompositionModelFile.gif">
+         <description>%_UI_CompositionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated infrastructure -->
+      <editor
+            id="infrastructure.composition.presentation.CompositionEditorID"
+            name="%_UI_CompositionEditor_label"
+            icon="icons/full/obj16/CompositionModelFile.gif"
+            extensions="composition"
+            class="infrastructure.composition.presentation.CompositionEditor"
+            contributorClass="infrastructure.composition.presentation.CompositionActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

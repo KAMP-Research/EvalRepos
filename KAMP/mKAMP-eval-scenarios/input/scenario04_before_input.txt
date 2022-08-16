@@ -1,0 +1,14 @@
+edu.kit.ipd.sdq.kamp4aps/bin/edu/kit/ipd/sdq/kamp4aps/core/scenarios/BusChanges.class
+edu.kit.ipd.sdq.kamp4aps/bin/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SensorChanges.class
+edu.kit.ipd.sdq.kamp4aps/bin/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SignalInterfacePropagation.class
+edu.kit.ipd.sdq.kamp4aps/bin/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SwitchChanges.class
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/Change.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/ComponentChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/InterfaceChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/ModuleChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/StructureChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/BusChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/RampChange.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SensorChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SignalInterfacePropagation.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SwitchChanges.java

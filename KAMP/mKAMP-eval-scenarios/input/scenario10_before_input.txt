@@ -1,0 +1,3 @@
+edu.kit.ipd.sdq.kaps/src/edu/kit/ipd/sdq/kamp4aps/core/APSChangePropagationAnalysis.java
+edu.kit.ipd.sdq.kaps/src/edu/kit/ipd/sdq/kamp4aps/core/APSArchitectureModelLookup.java
+edu.kit.ipd.sdq.kaps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/BusChanges.java

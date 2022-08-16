@@ -1,0 +1,5 @@
+edu.kit.ipd.sdq.kamp4aps.aps/model/aPS.ecore
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/APSArchitectureModelLookup.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/changepropagation/ModuleChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/MicroSwitchModuleChange.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/RampChange.java

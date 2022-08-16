@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated resourceinterfaces -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="resourceinterfaces.repository.presentation.RepositoryModelWizardID"
+            name="%_UI_RepositoryModelWizard_label"
+            class="resourceinterfaces.repository.presentation.RepositoryModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RepositoryModelFile.gif">
+         <description>%_UI_RepositoryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated resourceinterfaces -->
+      <editor
+            id="resourceinterfaces.repository.presentation.RepositoryEditorID"
+            name="%_UI_RepositoryEditor_label"
+            icon="icons/full/obj16/RepositoryModelFile.gif"
+            extensions="repository"
+            class="resourceinterfaces.repository.presentation.RepositoryEditor"
+            contributorClass="resourceinterfaces.repository.presentation.RepositoryActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated resourceinterfaces -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="resourceinterfaces.seff.presentation.SeffModelWizardID"
+            name="%_UI_SeffModelWizard_label"
+            class="resourceinterfaces.seff.presentation.SeffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SeffModelFile.gif">
+         <description>%_UI_SeffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated resourceinterfaces -->
+      <editor
+            id="resourceinterfaces.seff.presentation.SeffEditorID"
+            name="%_UI_SeffEditor_label"
+            icon="icons/full/obj16/SeffModelFile.gif"
+            extensions="seff"
+            class="resourceinterfaces.seff.presentation.SeffEditor"
+            contributorClass="resourceinterfaces.seff.presentation.SeffActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated resourceinterfaces -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="resourceinterfaces.composition.presentation.CompositionModelWizardID"
+            name="%_UI_CompositionModelWizard_label"
+            class="resourceinterfaces.composition.presentation.CompositionModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CompositionModelFile.gif">
+         <description>%_UI_CompositionModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated resourceinterfaces -->
+      <editor
+            id="resourceinterfaces.composition.presentation.CompositionEditorID"
+            name="%_UI_CompositionEditor_label"
+            icon="icons/full/obj16/CompositionModelFile.gif"
+            extensions="composition"
+            class="resourceinterfaces.composition.presentation.CompositionEditor"
+            contributorClass="resourceinterfaces.composition.presentation.CompositionActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated resourceinterfaces -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="resourceinterfaces.resourcetype.presentation.ResourcetypeModelWizardID"
+            name="%_UI_ResourcetypeModelWizard_label"
+            class="resourceinterfaces.resourcetype.presentation.ResourcetypeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ResourcetypeModelFile.gif">
+         <description>%_UI_ResourcetypeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated resourceinterfaces -->
+      <editor
+            id="resourceinterfaces.resourcetype.presentation.ResourcetypeEditorID"
+            name="%_UI_ResourcetypeEditor_label"
+            icon="icons/full/obj16/ResourcetypeModelFile.gif"
+            extensions="resourcetype"
+            class="resourceinterfaces.resourcetype.presentation.ResourcetypeEditor"
+            contributorClass="resourceinterfaces.resourcetype.presentation.ResourcetypeActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

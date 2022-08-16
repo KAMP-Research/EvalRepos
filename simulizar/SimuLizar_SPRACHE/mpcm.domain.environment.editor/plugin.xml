@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated environment -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="environment.presentation.EnvironmentModelWizardID"
+            name="%_UI_EnvironmentModelWizard_label"
+            class="environment.presentation.EnvironmentModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EnvironmentModelFile.gif">
+         <description>%_UI_EnvironmentModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated environment -->
+      <editor
+            id="environment.presentation.EnvironmentEditorID"
+            name="%_UI_EnvironmentEditor_label"
+            icon="icons/full/obj16/EnvironmentModelFile.gif"
+            extensions="environment"
+            class="environment.presentation.EnvironmentEditor"
+            contributorClass="environment.presentation.EnvironmentActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

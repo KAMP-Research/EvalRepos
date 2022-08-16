@@ -1,0 +1,4 @@
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/BusChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SensorChanges.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SignalInterfacePropagation.java
+edu.kit.ipd.sdq.kamp4aps/src/edu/kit/ipd/sdq/kamp4aps/core/scenarios/SwitchChanges.java

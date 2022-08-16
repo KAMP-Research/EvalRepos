@@ -1,0 +1,304 @@
+Report [description=20 cycles found
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.core.AdaptationStep -> org.palladiosimulator.simulizar.action.core.AbstractAdaptationBehavior
+		org.palladiosimulator.simulizar.action.core.AdaptationStep#getAdaptationBehavior 42
+
+		org.palladiosimulator.simulizar.action.core.AdaptationStep#setAdaptationBehavior 52
+	org.palladiosimulator.simulizar.action.core.AbstractAdaptationBehavior -> org.palladiosimulator.simulizar.action.core.AdaptationStep
+		org.palladiosimulator.simulizar.action.core.AbstractAdaptationBehavior#getAdaptationSteps 44
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.reconfigurationrule.ReconfigurationruleFactory -> org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationruleFactoryImpl
+		org.palladiosimulator.simulizar.reconfigurationrule.ReconfigurationruleFactory#eINSTANCE 22
+	org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationruleFactoryImpl -> org.palladiosimulator.simulizar.reconfigurationrule.impl.TacticImpl
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationruleFactoryImpl#createTactic 81
+	org.palladiosimulator.simulizar.reconfigurationrule.impl.TacticImpl -> org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationImpl
+	org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationImpl -> org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl
+	org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl -> org.palladiosimulator.simulizar.reconfigurationrule.impl.NamedElementImpl
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl#eSet 168
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl#eIsSet 205
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl#eInverseRemove 136
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl#<init> 66
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl#eGet 150
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.StrategyImpl#eUnset 187
+	org.palladiosimulator.simulizar.reconfigurationrule.impl.NamedElementImpl -> org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationrulePackageImpl
+	org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationrulePackageImpl -> org.palladiosimulator.simulizar.reconfigurationrule.ReconfigurationrulePackage
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationrulePackageImpl#init 103
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationrulePackageImpl#initializePackageContents 307
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationrulePackageImpl#createPackageContents 269
+
+		org.palladiosimulator.simulizar.reconfigurationrule.impl.ReconfigurationrulePackageImpl#<init> 80
+	org.palladiosimulator.simulizar.reconfigurationrule.ReconfigurationrulePackage -> org.palladiosimulator.simulizar.reconfigurationrule.ReconfigurationruleFactory
+		org.palladiosimulator.simulizar.reconfigurationrule.ReconfigurationrulePackage#getReconfigurationruleFactory 445
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.interpreter.RDSeffSwitch -> org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#interpretInfrastructureCalls 192
+
+		org.palladiosimulator.simulizar.interpreter.RDSeffSwitch#caseExternalCallAction 232
+	org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch -> org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseAssemblyInfrastructureConnector 68
+
+		org.palladiosimulator.simulizar.interpreter.ComposedStructureInnerSwitch#caseAssemblyConnector 53
+	org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch -> org.palladiosimulator.simulizar.interpreter.RDSeffSwitch
+		org.palladiosimulator.simulizar.interpreter.RepositoryComponentSwitch#interpretSeffs 201
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.HenshinreconfigurationPackage -> org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationPackageImpl
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.HenshinreconfigurationPackage#eINSTANCE 56
+	org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationPackageImpl -> org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.HenshinreconfigurationFactory
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationPackageImpl#<init> 46
+
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationPackageImpl#getHenshinreconfigurationFactory 110
+	org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.HenshinreconfigurationFactory -> org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinTransformationImpl
+	org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinTransformationImpl -> org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationFactoryImpl
+	org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationFactoryImpl -> org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.HenshinreconfigurationPackage
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationFactoryImpl#init 27
+
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationFactoryImpl#getPackage 90
+
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationFactoryImpl#getHenshinreconfigurationPackage 79
+
+		org.palladiosimulator.simulizar.reconfiguration.henshin.henshinreconfiguration.impl.HenshinreconfigurationFactoryImpl#create 56
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.core.impl.GuardedTransitionImpl -> org.palladiosimulator.simulizar.action.core.impl.CoreFactoryImpl
+	org.palladiosimulator.simulizar.action.core.impl.CoreFactoryImpl -> org.palladiosimulator.simulizar.action.core.impl.AdaptationBehaviorImpl
+		org.palladiosimulator.simulizar.action.core.impl.CoreFactoryImpl#createAdaptationBehavior 100
+	org.palladiosimulator.simulizar.action.core.impl.AdaptationBehaviorImpl -> org.palladiosimulator.simulizar.action.instance.InstancePackage
+	org.palladiosimulator.simulizar.action.instance.InstancePackage -> org.palladiosimulator.simulizar.action.core.impl.AbstractAdaptationBehaviorImpl
+	org.palladiosimulator.simulizar.action.core.impl.AbstractAdaptationBehaviorImpl -> org.palladiosimulator.simulizar.action.core.impl.CorePackageImpl
+	org.palladiosimulator.simulizar.action.core.impl.CorePackageImpl -> org.palladiosimulator.simulizar.action.context.impl.ContextPackageImpl
+		org.palladiosimulator.simulizar.action.core.impl.CorePackageImpl#init 190
+	org.palladiosimulator.simulizar.action.context.impl.ContextPackageImpl -> org.palladiosimulator.simulizar.action.parameter.ParameterPackage
+		org.palladiosimulator.simulizar.action.context.impl.ContextPackageImpl#init 95
+	org.palladiosimulator.simulizar.action.parameter.ParameterPackage -> org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl
+	org.palladiosimulator.simulizar.action.core.impl.ControllerCallImpl -> org.palladiosimulator.simulizar.action.mapping.MappingFactory
+	org.palladiosimulator.simulizar.action.mapping.MappingFactory -> org.palladiosimulator.simulizar.action.core.impl.RoleTypeImpl
+	org.palladiosimulator.simulizar.action.core.impl.RoleTypeImpl -> org.palladiosimulator.simulizar.action.context.impl.ContextFactoryImpl
+	org.palladiosimulator.simulizar.action.context.impl.ContextFactoryImpl -> org.palladiosimulator.simulizar.action.core.impl.ResourceDemandingStepImpl
+	org.palladiosimulator.simulizar.action.core.impl.ResourceDemandingStepImpl -> org.palladiosimulator.simulizar.action.core.impl.EnactAdaptationStepImpl
+	org.palladiosimulator.simulizar.action.core.impl.EnactAdaptationStepImpl -> org.palladiosimulator.simulizar.action.instance.impl.InstancePackageImpl
+	org.palladiosimulator.simulizar.action.instance.impl.InstancePackageImpl -> org.palladiosimulator.simulizar.action.mapping.impl.MappingPackageImpl
+		org.palladiosimulator.simulizar.action.instance.impl.InstancePackageImpl#init 104
+	org.palladiosimulator.simulizar.action.mapping.impl.MappingPackageImpl -> org.palladiosimulator.simulizar.action.core.impl.StateTransformingStepImpl
+	org.palladiosimulator.simulizar.action.core.impl.StateTransformingStepImpl -> org.palladiosimulator.simulizar.action.mapping.MappingPackage
+	org.palladiosimulator.simulizar.action.mapping.MappingPackage -> org.palladiosimulator.simulizar.action.instance.impl.RoleImpl
+	org.palladiosimulator.simulizar.action.instance.impl.RoleImpl -> org.palladiosimulator.simulizar.action.core.impl.NestedAdaptationBehaviorImpl
+	org.palladiosimulator.simulizar.action.core.impl.NestedAdaptationBehaviorImpl -> org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl
+	org.palladiosimulator.simulizar.action.mapping.impl.ControllerMappingImpl -> org.palladiosimulator.simulizar.action.parameter.impl.ControllerCallInputVariableUsageCollectionImpl
+	org.palladiosimulator.simulizar.action.parameter.impl.ControllerCallInputVariableUsageCollectionImpl -> org.palladiosimulator.simulizar.action.core.CorePackage
+	org.palladiosimulator.simulizar.action.core.CorePackage -> org.palladiosimulator.simulizar.action.context.impl.ExecutionContextImpl
+	org.palladiosimulator.simulizar.action.context.impl.ExecutionContextImpl -> org.palladiosimulator.simulizar.action.core.CoreFactory
+	org.palladiosimulator.simulizar.action.core.CoreFactory -> org.palladiosimulator.simulizar.action.mapping.impl.MappingImpl
+	org.palladiosimulator.simulizar.action.mapping.impl.MappingImpl -> org.palladiosimulator.simulizar.action.core.impl.GuardedStepImpl
+	org.palladiosimulator.simulizar.action.core.impl.GuardedStepImpl -> org.palladiosimulator.simulizar.action.parameter.impl.ParameterFactoryImpl
+	org.palladiosimulator.simulizar.action.parameter.impl.ParameterFactoryImpl -> org.palladiosimulator.simulizar.action.core.impl.AdaptationBehaviorRepositoryImpl
+	org.palladiosimulator.simulizar.action.core.impl.AdaptationBehaviorRepositoryImpl -> org.palladiosimulator.simulizar.action.mapping.impl.MappingFactoryImpl
+	org.palladiosimulator.simulizar.action.mapping.impl.MappingFactoryImpl -> org.palladiosimulator.simulizar.action.parameter.ParameterFactory
+	org.palladiosimulator.simulizar.action.parameter.ParameterFactory -> org.palladiosimulator.simulizar.action.core.impl.AdaptationStepImpl
+	org.palladiosimulator.simulizar.action.core.impl.AdaptationStepImpl -> org.palladiosimulator.simulizar.action.instance.impl.InstanceFactoryImpl
+	org.palladiosimulator.simulizar.action.instance.impl.InstanceFactoryImpl -> org.palladiosimulator.simulizar.action.instance.InstanceFactory
+		org.palladiosimulator.simulizar.action.instance.impl.InstanceFactoryImpl#init 28
+	org.palladiosimulator.simulizar.action.instance.InstanceFactory -> org.palladiosimulator.simulizar.action.context.ContextFactory
+	org.palladiosimulator.simulizar.action.context.ContextFactory -> org.palladiosimulator.simulizar.action.parameter.impl.ControllerCallInputVariableUsageImpl
+	org.palladiosimulator.simulizar.action.parameter.impl.ControllerCallInputVariableUsageImpl -> org.palladiosimulator.simulizar.action.context.ContextPackage
+	org.palladiosimulator.simulizar.action.context.ContextPackage -> org.palladiosimulator.simulizar.action.parameter.impl.ParameterPackageImpl
+	org.palladiosimulator.simulizar.action.parameter.impl.ParameterPackageImpl -> org.palladiosimulator.simulizar.action.instance.impl.RoleSetImpl
+	org.palladiosimulator.simulizar.action.instance.impl.RoleSetImpl -> org.palladiosimulator.simulizar.action.core.impl.GuardedTransitionImpl
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.mapping.Mapping -> org.palladiosimulator.simulizar.action.mapping.ControllerMapping
+		org.palladiosimulator.simulizar.action.mapping.Mapping#getControllerMappings 44
+	org.palladiosimulator.simulizar.action.mapping.ControllerMapping -> org.palladiosimulator.simulizar.action.mapping.Mapping
+		org.palladiosimulator.simulizar.action.mapping.ControllerMapping#getMapping 100
+
+		org.palladiosimulator.simulizar.action.mapping.ControllerMapping#setMapping 110
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.StorydiagramreconfigurationPackage -> org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationPackageImpl
+		org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.StorydiagramreconfigurationPackage#eINSTANCE 56
+	org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationPackageImpl -> org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StoryDiagramActivityImpl
+	org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StoryDiagramActivityImpl -> org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.StorydiagramreconfigurationFactory
+	org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.StorydiagramreconfigurationFactory -> org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationFactoryImpl
+		org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.StorydiagramreconfigurationFactory#eINSTANCE 22
+	org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationFactoryImpl -> org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.StorydiagramreconfigurationPackage
+		org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationFactoryImpl#init 27
+
+		org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationFactoryImpl#getPackage 90
+
+		org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationFactoryImpl#create 56
+
+		org.palladiosimulator.simulizar.reconfiguration.storydiagram.model.impl.StorydiagramreconfigurationFactoryImpl#getStorydiagramreconfigurationPackage 79
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementFactoryImpl -> org.palladiosimulator.runtimemeasurement.RuntimeMeasurementPackage
+		org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementFactoryImpl#init 27
+
+		org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementFactoryImpl#getPackage 105
+
+		org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementFactoryImpl#create 55
+
+		org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementFactoryImpl#getRuntimeMeasurementPackage 94
+	org.palladiosimulator.runtimemeasurement.RuntimeMeasurementPackage -> org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementModelImpl
+	org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementModelImpl -> org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementImpl
+	org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementImpl -> org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementPackageImpl
+	org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementPackageImpl -> org.palladiosimulator.runtimemeasurement.RuntimeMeasurementFactory
+		org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementPackageImpl#getRuntimeMeasurementFactory 175
+
+		org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementPackageImpl#<init> 54
+	org.palladiosimulator.runtimemeasurement.RuntimeMeasurementFactory -> org.palladiosimulator.runtimemeasurement.impl.RuntimeMeasurementFactoryImpl
+		org.palladiosimulator.runtimemeasurement.RuntimeMeasurementFactory#eINSTANCE 21
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.core.GuardedStep -> org.palladiosimulator.simulizar.action.core.NestedAdaptationBehavior
+	org.palladiosimulator.simulizar.action.core.NestedAdaptationBehavior -> org.palladiosimulator.simulizar.action.core.GuardedTransition
+		org.palladiosimulator.simulizar.action.core.NestedAdaptationBehavior#getGuardedTransition 38
+
+		org.palladiosimulator.simulizar.action.core.NestedAdaptationBehavior#setGuardedTransition 48
+	org.palladiosimulator.simulizar.action.core.GuardedTransition -> org.palladiosimulator.simulizar.action.core.GuardedStep
+		org.palladiosimulator.simulizar.action.core.GuardedTransition#setGuardedStep 80
+
+		org.palladiosimulator.simulizar.action.core.GuardedTransition#getGuardedStep 70
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.measuringpoint.create.ResourceURIsFromMPsExtractor -> org.palladiosimulator.simulizar.measuringpoint.create.ResourceURIsFromSAsExtractor
+	org.palladiosimulator.simulizar.measuringpoint.create.ResourceURIsFromSAsExtractor -> org.palladiosimulator.simulizar.measuringpoint.create.StereotypeApplicationListener
+		org.palladiosimulator.simulizar.measuringpoint.create.ResourceURIsFromSAsExtractor#visit 35
+	org.palladiosimulator.simulizar.measuringpoint.create.StereotypeApplicationListener -> org.palladiosimulator.simulizar.measuringpoint.create.ResourceURIsFromMPsExtractor
+		org.palladiosimulator.simulizar.measuringpoint.create.StereotypeApplicationListener#adaptPaXmisToDeletedMeasuringPoints 254
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.simulationevents.PeriodicSimulationEvent -> org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredSimulationEntity
+		org.palladiosimulator.simulizar.simulationevents.PeriodicSimulationEvent#eventRoutine 22
+	org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredSimulationEntity -> org.palladiosimulator.simulizar.simulationevents.PeriodicSimulationEvent
+		org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredSimulationEntity#setDelayAndReinitialize 32
+
+		org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredSimulationEntity#<init> 13
+
+		org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredSimulationEntity#myTriggerEvent 10
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	simulizarmeasuringpoint.impl.ReconfigurationMeasuringPointImpl -> simulizarmeasuringpoint.SimulizarmeasuringpointFactory
+	simulizarmeasuringpoint.SimulizarmeasuringpointFactory -> simulizarmeasuringpoint.impl.SimulizarmeasuringpointPackageImpl
+	simulizarmeasuringpoint.impl.SimulizarmeasuringpointPackageImpl -> simulizarmeasuringpoint.impl.SimulizarmeasuringpointFactoryImpl
+	simulizarmeasuringpoint.impl.SimulizarmeasuringpointFactoryImpl -> simulizarmeasuringpoint.SimulizarmeasuringpointPackage
+		simulizarmeasuringpoint.impl.SimulizarmeasuringpointFactoryImpl#init 26
+
+		simulizarmeasuringpoint.impl.SimulizarmeasuringpointFactoryImpl#getPackage 91
+
+		simulizarmeasuringpoint.impl.SimulizarmeasuringpointFactoryImpl#getSimulizarmeasuringpointPackage 80
+
+		simulizarmeasuringpoint.impl.SimulizarmeasuringpointFactoryImpl#create 54
+	simulizarmeasuringpoint.SimulizarmeasuringpointPackage -> simulizarmeasuringpoint.impl.ReconfigurationMeasuringPointImpl
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.instance.Role -> org.palladiosimulator.simulizar.action.core.AdaptationBehaviorRepository
+	org.palladiosimulator.simulizar.action.core.AdaptationBehaviorRepository -> org.palladiosimulator.simulizar.action.instance.RoleSet
+	org.palladiosimulator.simulizar.action.instance.RoleSet -> org.palladiosimulator.simulizar.action.core.AdaptationBehavior
+	org.palladiosimulator.simulizar.action.core.AdaptationBehavior -> org.palladiosimulator.simulizar.action.core.RoleType
+		org.palladiosimulator.simulizar.action.core.AdaptationBehavior#getInvolvedRoles 50
+	org.palladiosimulator.simulizar.action.core.RoleType -> org.palladiosimulator.simulizar.action.instance.Role
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.usagemodel.LoopingUsageEvolver -> org.palladiosimulator.simulizar.modelobserver.IModelObserver
+	org.palladiosimulator.simulizar.modelobserver.IModelObserver -> org.palladiosimulator.simulizar.usagemodel.UsageEvolverFacade
+	org.palladiosimulator.simulizar.usagemodel.UsageEvolverFacade -> org.palladiosimulator.simulizar.usagemodel.StretchedUsageEvolver
+		org.palladiosimulator.simulizar.usagemodel.UsageEvolverFacade#createUsageEvolver 41
+	org.palladiosimulator.simulizar.usagemodel.StretchedUsageEvolver -> org.palladiosimulator.simulizar.runtimestate.SimuLizarRuntimeState
+	org.palladiosimulator.simulizar.runtimestate.SimuLizarRuntimeState -> org.palladiosimulator.simulizar.runtimestate.ComponentInstanceRegistry
+	org.palladiosimulator.simulizar.runtimestate.ComponentInstanceRegistry -> org.palladiosimulator.simulizar.modelobserver.AbstractModelObserver
+	org.palladiosimulator.simulizar.modelobserver.AbstractModelObserver -> org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer
+	org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer -> org.palladiosimulator.simulizar.runtimestate.AbstractSimuLizarRuntimeState
+		org.palladiosimulator.simulizar.modelobserver.AllocationLookupSyncer#initialize 64
+	org.palladiosimulator.simulizar.runtimestate.AbstractSimuLizarRuntimeState -> org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver
+	org.palladiosimulator.simulizar.usagemodel.PeriodicallyTriggeredUsageEvolver -> org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels
+	org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels -> org.palladiosimulator.simulizar.interpreter.InterpreterDefaultContext
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#getScenarioRunner 114
+
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#<init> 34
+
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#rootContext 30
+
+		org.palladiosimulator.simulizar.usagemodel.SimulatedUsageModels#createWorkloadDrivers 44
+	org.palladiosimulator.simulizar.interpreter.InterpreterDefaultContext -> org.palladiosimulator.simulizar.runtimestate.SimulatedComponentInstance
+	org.palladiosimulator.simulizar.runtimestate.SimulatedComponentInstance -> org.palladiosimulator.simulizar.usagemodel.LoopingUsageEvolver
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.QvtoreconfigurationFactory -> org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationFactoryImpl
+		org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.QvtoreconfigurationFactory#eINSTANCE 23
+	org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationFactoryImpl -> org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoTransformationImpl
+		org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationFactoryImpl#createQvtoTransformation 69
+	org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoTransformationImpl -> org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.QvtoreconfigurationPackage
+		org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoTransformationImpl#eStaticClass 35
+	org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.QvtoreconfigurationPackage -> org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationPackageImpl
+		org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.QvtoreconfigurationPackage#eINSTANCE 56
+	org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationPackageImpl -> org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.QvtoreconfigurationFactory
+		org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationPackageImpl#getQvtoreconfigurationFactory 110
+
+		org.palladiosimulator.simulizar.reconfiguration.qvto.qvtoreconfiguration.impl.QvtoreconfigurationPackageImpl#<init> 46
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess -> org.palladiosimulator.simulizar.reconfiguration.Reconfigurator
+		org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess#reconfigurator 36
+
+		org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess#fireReconfigurationExecutedEvent 92
+
+		org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess#fireBeginReconfigurationEvent 84
+
+		org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess#<init> 56
+
+		org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess#fireEndReconfigurationEvent 88
+	org.palladiosimulator.simulizar.reconfiguration.Reconfigurator -> org.palladiosimulator.simulizar.reconfiguration.ReconfigurationProcess
+		org.palladiosimulator.simulizar.reconfiguration.Reconfigurator#reconfigurationProcess 73
+
+		org.palladiosimulator.simulizar.reconfiguration.Reconfigurator#cleanUp 116
+
+		org.palladiosimulator.simulizar.reconfiguration.Reconfigurator#checkAndExecuteReconfigurations 134
+
+		org.palladiosimulator.simulizar.reconfiguration.Reconfigurator#getReconfigurationProcess 221
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsageCollection -> org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsage
+		org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsageCollection#getControllerCallInputVariableUsages 44
+	org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsage -> org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsageCollection
+		org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsage#setContainingCollection 110
+
+		org.palladiosimulator.simulizar.action.parameter.ControllerCallInputVariableUsage#getContainingCollection 100
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.launcher.jobs.LoadSimuLizarModelsIntoBlackboardJob -> org.palladiosimulator.simulizar.launcher.jobs.LoadPCMModelsInterpreterJob
+		org.palladiosimulator.simulizar.launcher.jobs.LoadSimuLizarModelsIntoBlackboardJob#<init> 34
+	org.palladiosimulator.simulizar.launcher.jobs.LoadPCMModelsInterpreterJob -> org.palladiosimulator.simulizar.launcher.jobs.LoadSimuLizarModelsIntoBlackboardJob
+		org.palladiosimulator.simulizar.launcher.jobs.LoadPCMModelsInterpreterJob#execute 59
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.action.core.ResourceDemandingStep -> org.palladiosimulator.simulizar.action.core.ControllerCall
+		org.palladiosimulator.simulizar.action.core.ResourceDemandingStep#getControllerCalls 67
+	org.palladiosimulator.simulizar.action.core.ControllerCall -> org.palladiosimulator.simulizar.action.core.ResourceDemandingStep
+		org.palladiosimulator.simulizar.action.core.ControllerCall#setResourceDemandingStep 109
+
+		org.palladiosimulator.simulizar.action.core.ControllerCall#getResourceDemandingStep 99
+<<<<<<<< Cycle end
+>>>>>>>> Cycle start
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener -> org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener#initExtensionMeasurements 78
+	org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator -> org.palladiosimulator.simulizar.interpreter.listener.AbstractProbeFrameworkListener
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator#probeFrameworkListener 27
+
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator#setProbeFrameworkListener 35
+
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator#getProbeFrameworkListener 57
+
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator#initializeRecorder 81
+
+		org.palladiosimulator.simulizar.interpreter.listener.AbstractRecordingProbeFrameworkListenerDecorator#getProbeFrameworkContext 66
+<<<<<<<< Cycle end
+, smellFound=true, solutions=[], text=Dependency cycle analyzer on type level]

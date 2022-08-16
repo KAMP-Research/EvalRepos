@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated softwareusage -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="softwareusage.presentation.SoftwareusageModelWizardID"
+            name="%_UI_SoftwareusageModelWizard_label"
+            class="softwareusage.presentation.SoftwareusageModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SoftwareusageModelFile.gif">
+         <description>%_UI_SoftwareusageModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated softwareusage -->
+      <editor
+            id="softwareusage.presentation.SoftwareusageEditorID"
+            name="%_UI_SoftwareusageEditor_label"
+            icon="icons/full/obj16/SoftwareusageModelFile.gif"
+            extensions="softwareusage"
+            class="softwareusage.presentation.SoftwareusageEditor"
+            contributorClass="softwareusage.presentation.SoftwareusageActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
