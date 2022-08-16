@@ -1,0 +1,8 @@
+Report [description=There were 5 types not using layers found
+edu.kit.ipd.sdq.kamp4aps.core.APSChangePropagationAnalysis uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.InterfaceChanges uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersionPersistency uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelFactoryFacade uses no layer
+, smellFound=true, solutions=[], text=Dependency layer Analyzer on type-level
+]

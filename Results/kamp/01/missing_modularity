@@ -1,0 +1,6 @@
+Report [description=There were 3 types not using layers found
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.derivation.APSEnrichedWorkplanDerivation uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges uses no layer
+, smellFound=true, solutions=[], text=Dependency layer Analyzer on type-level
+]

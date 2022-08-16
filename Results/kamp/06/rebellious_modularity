@@ -1,0 +1,9 @@
+Report [description=Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.SensorChanges produces a language blob
+	, , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.BusChanges produces a language blob
+	, , , , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.SignalInterfacePropagation produces a language blob
+	, 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges produces a language blob
+	, , , , 
+, smellFound=true, solutions=[], text=4 language blobs found]

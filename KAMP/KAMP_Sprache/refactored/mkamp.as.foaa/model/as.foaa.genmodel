@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mkamp.quality.as.foaa/src" editDirectory="/mkamp.quality.as.foaa.edit/src-gen"
+    modelPluginID="mkamp.quality.as.foaa" modelName="As" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../mkamp.domain.as/model/as.genmodel#//as ../../mkamp.paradigm.basic/model/basic.genmodel#//basic"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>as.foaa.ecore</foreignModel>
+  <genPackages prefix="As_foaa" basePackage="quality" disposableProviderFactory="true"
+      ecorePackage="as.foaa.ecore#/">
+    <genClasses ecoreClass="as.foaa.ecore#//FieldOfActivityAnnotationRepository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/calibrationSpecification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/testSpecification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/stockSpecification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/hmiSpecification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/ecadSpecification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/documentationSpecification"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//FieldOfActivityAnnotationRepository/staffSpecification"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//TestSpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//TestSpecification/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//TestSpecification/systemTests"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//TestSpecification/role"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//StockSpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//StockSpecification/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StockSpecification/componentStockList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StockSpecification/interfaceStockList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StockSpecification/moduleStockList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StockSpecification/structureStockList"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StockSpecification/role"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//HMISpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//HMISpecification/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//HMISpecification/role"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//HMISpecification/hmiConfig"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//ECADSpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//ECADSpecification/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ECADSpecification/drawings"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ECADSpecification/role"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//DocumentationSpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationSpecification/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationSpecification/componentDocumentation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationSpecification/moduleDocumentation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationSpecification/interfaceDocumentation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationSpecification/structureDocumentation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationSpecification/role"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//StaffSpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//StaffSpecification/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StaffSpecification/personList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StaffSpecification/roleList"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//CalibrationSpecification">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationSpecification/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationSpecification/role"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationSpecification/calibrationConfig"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//CalibrationConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.foaa.ecore#//CalibrationConfiguration/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationConfiguration/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationConfiguration/components"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationConfiguration/modules"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationConfiguration/interfaces"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//CalibrationConfiguration/structures"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//HMIConfiguration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.foaa.ecore#//HMIConfiguration/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//HMIConfiguration/components"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//HMIConfiguration/modules"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//HMIConfiguration/interfaces"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//HMIConfiguration/structures"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//HMIConfiguration/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//PersonList">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//PersonList/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//PersonList/persons"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//Person">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//Person/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//Person/roles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.foaa.ecore#//Person/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="as.foaa.ecore#//Role">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//Role/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//Role/person"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.foaa.ecore#//Role/description"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//RoleList">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//RoleList/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//RoleList/roles"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="as.foaa.ecore#//File">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.foaa.ecore#//File/filename"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="as.foaa.ecore#//TestCase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.foaa.ecore#//TestCase/testName"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//SystemTest">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//SystemTest/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//SystemTest/systemUnderTest"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//Engineer"/>
+    <genClasses ecoreClass="as.foaa.ecore#//Purchaser"/>
+    <genClasses ecoreClass="as.foaa.ecore#//Mechanic"/>
+    <genClasses ecoreClass="as.foaa.ecore#//Documentation"/>
+    <genClasses ecoreClass="as.foaa.ecore#//Drawing">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//Drawing/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//ComponentDrawing">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ComponentDrawing/drawn_component"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//ModuleDrawing">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ModuleDrawing/drawn_module"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//InterfaceDrawing">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//InterfaceDrawing/drawn_interface"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//StructureDrawing">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StructureDrawing/drawn_structure"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//MainteneanceDocumentation">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//MainteneanceDocumentation/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//OperatorInstructions">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//OperatorInstructions/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//TrainingDocIntern">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//TrainingDocIntern/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//TrainingDocExternal">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//TrainingDocExternal/parent"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="as.foaa.ecore#//DocumentationFiles">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationFiles/mainteneance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationFiles/instructions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationFiles/trainingIntern"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.foaa.ecore#//DocumentationFiles/trainingExternal"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//ComponentDocumentationFiles">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//ComponentDocumentationFiles/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ComponentDocumentationFiles/documentedComponent"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//ModuleDocumentationFiles">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//ModuleDocumentationFiles/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ModuleDocumentationFiles/documentedModule"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//InterfaceDocumentationFiles">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//InterfaceDocumentationFiles/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//InterfaceDocumentationFiles/documentedInterface"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//StructureDocumentationFiles">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//StructureDocumentationFiles/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StructureDocumentationFiles/documentedStructure"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//StockList"/>
+    <genClasses ecoreClass="as.foaa.ecore#//ComponentStockList">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//ComponentStockList/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ComponentStockList/components"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//InterfaceStockList">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//InterfaceStockList/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//InterfaceStockList/interfaces"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//ModuleStockList">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//ModuleStockList/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//ModuleStockList/modules"/>
+    </genClasses>
+    <genClasses ecoreClass="as.foaa.ecore#//StructureStockList">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.foaa.ecore#//StructureStockList/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference as.foaa.ecore#//StructureStockList/structures"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,10 @@
+Report [description=org.camunda.bpm.engine.impl.test.AbstractProcessEngineTestCase#deploymentForTenant
+org.camunda.bpm.engine.impl.repository.ProcessApplicationDeploymentBuilderImpl#addModelInstance
+org.camunda.bpm.engine.repository.DeploymentBuilder#addModelInstance
+org.camunda.bpm.engine.repository.ProcessApplicationDeploymentBuilder#addModelInstance
+org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl#addModelInstance
+
+java.lang.String, org.camunda.bpm.model.bpmn.BpmnModelInstance 12
+
+
+, smellFound=true, solutions=[], text=dataclumbs]

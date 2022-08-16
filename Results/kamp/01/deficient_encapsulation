@@ -1,0 +1,35 @@
+Report [description=edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDocumentationForInterfaces
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDrawingsForInterfaces
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpStockListForInterface
+
+domain.as.InterfaceRepository.Interface, edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion 6
+
+
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDocumentationForModules
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDrawingsForModules
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpStockListForModule
+
+domain.as.ModuleRepository.Module, edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion 6
+
+
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDocumentationForComponents
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDrawingsForComponent
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpStockListForComponent
+
+domain.as.ComponentRepository.Component, edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion 6
+
+
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDocumentationForStructures
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpDrawingsForStructures
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup#lookUpStockListForStructure
+
+domain.as.StructureRepository.Structure, edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion 6
+
+
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges#addMicroswitchModificationToChangePropagation
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges#generateModifyMicroswitchModule
+
+domain.ppu.ppumodules.MicroswitchModule, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+, smellFound=true, solutions=[], text=dataclumbs]

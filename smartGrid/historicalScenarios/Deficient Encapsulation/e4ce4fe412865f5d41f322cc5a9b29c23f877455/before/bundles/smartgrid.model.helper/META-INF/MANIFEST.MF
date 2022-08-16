@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Helper
+Bundle-SymbolicName: smartgrid.model.helper
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: msmartgrid.analysis.input,
+ msmartgrid.analysis.output,
+ org.eclipse.swt,
+ org.eclipse.core.commands,
+ org.eclipse.ui.workbench,
+ org.eclipse.emf.transaction,
+ org.eclipse.sirius.diagram.ui
+Export-Package: smartgrid.model.helper.sirius
+Automatic-Module-Name: smartgrid.model.helper

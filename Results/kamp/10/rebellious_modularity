@@ -1,0 +1,7 @@
+Report [description=Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.BusChanges produces a language blob
+	, , , , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup produces a language blob
+	, , , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.APSChangePropagationAnalysis produces a language blob
+	, , , 
+, smellFound=true, solutions=[], text=3 language blobs found]

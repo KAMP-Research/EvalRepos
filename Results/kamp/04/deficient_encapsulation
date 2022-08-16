@@ -1,0 +1,25 @@
+Report [description=edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges#addMicroswitchModificationToChangePropagation
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges#generateModifyMicroswitchModule
+
+domain.ppu.ppumodules.MicroswitchModule, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ModuleChanges#addToModifyComponentsToChangePropagation
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.InterfaceChanges#addToModifyComponentsToChangePropagation
+
+java.util.List, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ModuleChanges#addToModifyInterfacesToChangePropagation
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ComponentChanges#addToModifyInterfacesToChangePropagation
+
+java.util.List, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ModuleChanges#addToModifyModulesToChangePropagation
+edu.kit.ipd.sdq.kamp4aps.core.changepropagation.InterfaceChanges#addToModifyModulesToChangePropagation
+
+java.util.List, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+, smellFound=true, solutions=[], text=dataclumbs]

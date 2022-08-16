@@ -1,0 +1,9 @@
+Report [description=Type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup produces a language blob
+	, , , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ModuleChanges produces a language blob
+	, , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.RampChange produces a language blob
+	, , , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.MicroSwitchModuleChange produces a language blob
+	, 
+, smellFound=true, solutions=[], text=4 language blobs found]

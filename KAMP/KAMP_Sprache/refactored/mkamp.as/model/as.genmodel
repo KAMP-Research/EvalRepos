@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mkamp.domain.as/src-gen" modelPluginID="mkamp.domain.as"
+    modelName="As" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../mkamp.paradigm.basic/model/basic.genmodel#//basic" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>as.ecore</foreignModel>
+  <genPackages prefix="As" basePackage="domain" disposableProviderFactory="true" ecorePackage="as.ecore#/">
+    <genClasses ecoreClass="as.ecore#//Plant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute as.ecore#//Plant/PlantName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//Plant/structures"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//Plant/interfaceRepository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//Plant/componentRepository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//Plant/moduleRepository"/>
+    </genClasses>
+    <nestedGenPackages prefix="ComponentRepository" disposableProviderFactory="true"
+        ecorePackage="as.ecore#//ComponentRepository">
+      <genClasses ecoreClass="as.ecore#//ComponentRepository/Component">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference as.ecore#//ComponentRepository/Component/connectedInterfaces"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.ecore#//ComponentRepository/Component/parent"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.ecore#//ComponentRepository/Component/parentModule"/>
+      </genClasses>
+      <genClasses ecoreClass="as.ecore#//ComponentRepository/ComponentRepository">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference as.ecore#//ComponentRepository/ComponentRepository/allComponentsInPlant"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="StructureRepository" disposableProviderFactory="true"
+        ecorePackage="as.ecore#//StructureRepository">
+      <genClasses ecoreClass="as.ecore#//StructureRepository/Structure">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference as.ecore#//StructureRepository/Structure/parentPlant"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//StructureRepository/Structure/modules"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//StructureRepository/Structure/components"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="ModuleRepository" disposableProviderFactory="true"
+        ecorePackage="as.ecore#//ModuleRepository">
+      <genClasses ecoreClass="as.ecore#//ModuleRepository/ModuleRepository">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference as.ecore#//ModuleRepository/ModuleRepository/allModulesInPlant"/>
+      </genClasses>
+      <genClasses ecoreClass="as.ecore#//ModuleRepository/Module">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference as.ecore#//ModuleRepository/Module/parentEntity"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//ModuleRepository/Module/modules"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//ModuleRepository/Module/components"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference as.ecore#//ModuleRepository/Module/interfaces"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="InterfaceRepository" disposableProviderFactory="true"
+        ecorePackage="as.ecore#//InterfaceRepository">
+      <genClasses ecoreClass="as.ecore#//InterfaceRepository/InterfaceRepository">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference as.ecore#//InterfaceRepository/InterfaceRepository/allInterfacesInPlant"/>
+      </genClasses>
+      <genClasses ecoreClass="as.ecore#//InterfaceRepository/Interface">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference as.ecore#//InterfaceRepository/Interface/parentElement"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

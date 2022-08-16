@@ -1,0 +1,7 @@
+Report [description=Type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureAnnotationLookup produces a language blob
+	, 
+Type edu.kit.ipd.sdq.kamp4aps.core.derivation.APSEnrichedWorkplanDerivation produces a language blob
+	, , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges produces a language blob
+	, , , , 
+, smellFound=true, solutions=[], text=3 language blobs found]

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps -->
+      <package
+            uri="components"
+            class="domain.aps.components.ComponentsPackage"
+            genModel="model/aps.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps -->
+      <package
+            uri="buscomponents"
+            class="domain.aps.buscomponents.BuscomponentsPackage"
+            genModel="model/aps.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps -->
+      <package
+            uri="electroniccomponents"
+            class="domain.aps.electroniccomponents.ElectroniccomponentsPackage"
+            genModel="model/aps.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps -->
+      <package
+            uri="mechanicalcomponents"
+            class="domain.aps.mechanicalcomponents.MechanicalcomponentsPackage"
+            genModel="model/aps.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps -->
+      <package
+            uri="structures"
+            class="domain.aps.structures.StructuresPackage"
+            genModel="model/aps.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated aps -->
+      <package
+            uri="interfaces"
+            class="domain.aps.interfaces.InterfacesPackage"
+            genModel="model/aps.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,5 @@
+Report [description=Method load(java.lang.String,java.lang.String,java.lang.String) from type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersionPersistency has primitive parameters
+Method save(java.lang.String,java.lang.String,edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion) from type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersionPersistency has primitive parameters
+Method saveModificationMarkFile(java.lang.String,java.lang.String,edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion) from type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersionPersistency has primitive parameters
+Method savePCMAndKAMP4APSModels(java.lang.String,java.lang.String,edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion) from type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersionPersistency has primitive parameters
+, smellFound=true, solutions=[], text=4 methods with primitive parameters found]

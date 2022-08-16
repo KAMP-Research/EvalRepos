@@ -1,0 +1,18 @@
+/**
+ */
+package domain.ppu.ppuinterfaces;
+
+import domain.aps.interfaces.Screwing;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Screwing Potentiometer</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see domain.ppu.ppuinterfaces.PpuinterfacesPackage#getScrewingPotentiometer()
+ * @model abstract="true"
+ * @generated
+ */
+public interface ScrewingPotentiometer extends Screwing {
+} // ScrewingPotentiometer

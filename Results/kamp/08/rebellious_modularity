@@ -1,0 +1,11 @@
+Report [description=Type edu.kit.ipd.sdq.kamp4aps.core.APSChangePropagationAnalysis produces a language blob
+	, , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion produces a language blob
+	, , 
+Type edu.kit.ipd.sdq.kamp4aps.core.changepropagation.InterfaceChanges produces a language blob
+	, , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersionPersistency produces a language blob
+	, , 
+Type edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelFactoryFacade produces a language blob
+	, , 
+, smellFound=true, solutions=[], text=5 language blobs found]

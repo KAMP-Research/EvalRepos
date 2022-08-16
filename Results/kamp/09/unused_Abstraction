@@ -1,0 +1,3 @@
+Report [description=#subPackage[name=edu]#subPackage[name=kit]#subPackage[name=ipd]#subPackage[name=sdq]#subPackage[name=kamp4aps]#subPackage[name=core]#containedType[name=APSChangePropagationAnalysis]#method[signature=calculateAndMarkRampChanges(edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion)]
+#subPackage[name=edu]#subPackage[name=kit]#subPackage[name=ipd]#subPackage[name=sdq]#subPackage[name=kamp4aps]#subPackage[name=core]#containedType[name=APSChangePropagationAnalysis]#method[signature=calculateAndMarkScrewingChanges(edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureVersion)]
+, smellFound=true, solutions=[], text=2 unused elements found]

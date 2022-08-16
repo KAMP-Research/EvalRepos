@@ -1,0 +1,138 @@
+Report [description=org.palladiosimulator.simulizar.domain.simulatedcomponent.SimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.domain.simulatedcomponent.SimulatedBasicComponentInstance#getAvailablePassiveResource
+org.palladiosimulator.simulizar.domain.simulatedcomponent.SimulatedBasicComponentInstance#releasePassiveResource
+org.palladiosimulator.simulizar.domain.runtimestateinterfaces.ISimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.domain.runtimestateinterfaces.ISimulatedBasicComponentInstance#getAvailablePassiveResource
+org.palladiosimulator.simulizar.domain.runtimestateinterfaces.ISimulatedBasicComponentInstance#releasePassiveResource
+
+org.palladiosimulator.simulizar.paradigm.contextinterfaces.IInterpreterDefaultContext, softwarerepository.PassiveResource 12
+
+
+org.palladiosimulator.simulizar.domain.usagemodel.SimulatedUsageModels#createClosedWorkloadDriver
+org.palladiosimulator.simulizar.domain.usagemodel.SimulatedUsageModels#createOpenWorkloadDriver
+org.palladiosimulator.simulizar.quality.usagemodel.SimulatedUsageModels#createClosedWorkloadDriver
+org.palladiosimulator.simulizar.quality.usagemodel.SimulatedUsageModels#createOpenWorkloadDriver
+
+softwareusage.UsageScenario, softwareusage.Workload 8
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.UsageModelSyncer#closedWorkloadThinkTimeChange
+org.palladiosimulator.simulizar.quality.modelobserver.UsageModelSyncer#openWorkloadInterarrivalTimeChange
+org.palladiosimulator.simulizar.domain.modelobserver.UsageModelSyncer#closedWorkloadThinkTimeChange
+org.palladiosimulator.simulizar.domain.modelobserver.UsageModelSyncer#openWorkloadInterarrivalTimeChange
+
+java.lang.String, softwareusage.Workload 8
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+
+de.uka.ipd.sdq.simucomframework.resources.ScheduledResource, resources.ResourceContainer 8
+
+
+org.palladiosimulator.simulizar.paradigm.composition.AssemblyPreparation#prepareAssemblyAllocationForAddition
+org.palladiosimulator.simulizar.paradigm.composition.AssemblyPreparation#prepareAssemblyAllocationForDeletion
+org.palladiosimulator.simulizar.quality.modelobserver.AllocationLookupSyncer#addAssemblyAllocation
+org.palladiosimulator.simulizar.quality.modelobserver.AllocationLookupSyncer#removeAssemblyAllocation
+
+composition.AssemblyContext, java.util.List 8
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+
+java.lang.String, resources.ResourceContainer 8
+
+
+org.palladiosimulator.simulizar.quality.runtimestate.SimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.domain.simulatedcomponent.SimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.domain.runtimestateinterfaces.ISimulatedBasicComponentInstance#acquirePassiveResource
+
+double, softwarerepository.PassiveResource 6
+
+
+org.palladiosimulator.simulizar.quality.runtimestate.SimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.quality.runtimestate.SimulatedBasicComponentInstance#getAvailablePassiveResource
+org.palladiosimulator.simulizar.quality.runtimestate.SimulatedBasicComponentInstance#releasePassiveResource
+
+org.palladiosimulator.simulizar.domain.context.InterpreterDefaultContext, softwarerepository.PassiveResource 6
+
+
+org.palladiosimulator.simulizar.quality.runtimestate.SimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.domain.simulatedcomponent.SimulatedBasicComponentInstance#acquirePassiveResource
+org.palladiosimulator.simulizar.domain.runtimestateinterfaces.ISimulatedBasicComponentInstance#acquirePassiveResource
+
+boolean, softwarerepository.PassiveResource 6
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+
+de.uka.ipd.sdq.simucomframework.resources.ScheduledResource, resources.ProcessingResourceSpecification 4
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+
+org.palladiosimulator.pcmmeasuringpoint.ActiveResourceMeasuringPoint, resources.ResourceContainer 4
+
+
+org.palladiosimulator.simulizar.paradigm.seff.interpreter.ParadigmSeffSwitch#interpretLoop
+org.palladiosimulator.simulizar.quality.interpreter.RDSeffSwitch#interpretLoop
+
+int, seff.LoopAction 4
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+
+java.lang.String, resources.ProcessingResourceSpecification 4
+
+
+org.palladiosimulator.simulizar.quality.interpreter.ComposedStructureSwtich#getConnectedConnector
+org.palladiosimulator.simulizar.paradigm.IComposedStructure#getConnectors
+
+composition.AssemblyContext, repository.RequiredRole 4
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.UsageModelSyncer#closedWorkloadPopulationChange
+org.palladiosimulator.simulizar.domain.modelobserver.UsageModelSyncer#closedWorkloadPopulationChange
+
+int, softwareusage.Workload 4
+
+
+org.palladiosimulator.simulizar.domain.usagemodel.SimulatedUsageModels#getScenarioRunner
+org.palladiosimulator.simulizar.quality.usagemodel.SimulatedUsageModels#getScenarioRunner
+
+de.uka.ipd.sdq.scheduler.resources.active.IResourceTableManager, softwareusage.UsageScenario 4
+
+
+org.palladiosimulator.simulizar.behaviourseff.interpreter.BehaviourRDSeffSwitch#iterateOverCollection
+org.palladiosimulator.simulizar.quality.interpreter.RDSeffSwitch#iterateOverCollection
+
+behaviourseff.CollectionIteratorAction, repository.Parameter 4
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitors
+
+resources.ProcessingResourceSpecification, resources.ResourceContainer 4
+
+
+org.palladiosimulator.simulizar.quality.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+org.palladiosimulator.simulizar.domain.modelobserver.ResourceEnvironmentSyncer#attachMonitorForActiveResourceMeasuringPoint
+
+org.palladiosimulator.monitorrepository.MeasurementSpecification, resources.ResourceContainer 4
+
+
+org.palladiosimulator.simulizar.paradigm.seff.interpreter.ParadigmSeffSwitch#determineSyncedProcesses
+org.palladiosimulator.simulizar.quality.interpreter.RDSeffSwitch#determineSyncedProcesses
+
+de.uka.ipd.sdq.scheduler.resources.active.IResourceTableManager, seff.ForkAction 4
+
+
+, smellFound=true, solutions=[], text=dataclumbs]

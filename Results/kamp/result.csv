@@ -1,0 +1,3 @@
+ScenarioNumber,broken_modularity,deficient_encapsulation,degraded_modularity,duplicated_abstraction,incomplete_abstraction,missing_abstraction,missing_modularity,rebellious_modularity,unexploited_Hierarchy,unused_abstraction,weakened_modularity
+1,2,3,4,5,6,7,8,9,0,7,10
+2,5,3,4,5,10,3,8,5,100,7,10

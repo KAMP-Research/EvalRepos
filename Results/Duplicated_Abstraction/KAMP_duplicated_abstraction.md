@@ -1,0 +1,3 @@
+Report [description=Method addToModifyInterfacesToChangePropagation(java.util.List,quality.as_mm.ChangePropagationDueToHardwareChange) from type edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ModuleChanges is duplicated
+Method addToModifyInterfacesToChangePropagation(java.util.List,quality.as_mm.ChangePropagationDueToHardwareChange) from type edu.kit.ipd.sdq.kamp4aps.core.changepropagation.ComponentChanges is duplicated
+, smellFound=true, solutions=[], text=2 duplicated methods found]

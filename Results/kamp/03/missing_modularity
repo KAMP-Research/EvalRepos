@@ -1,0 +1,8 @@
+Report [description=There were 5 types not using layers found
+edu.kit.ipd.sdq.kamp4aps.core.derivation.APSSubactivityDerivation uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.APSChangePropagationAnalysis uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.MicroSwitchModuleChange uses no layer
+edu.kit.ipd.sdq.kamp4aps.labels.LabelCustomizing uses no layer
+, smellFound=true, solutions=[], text=Dependency layer Analyzer on type-level
+]

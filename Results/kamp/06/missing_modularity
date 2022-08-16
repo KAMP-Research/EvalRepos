@@ -1,0 +1,7 @@
+Report [description=There were 4 types not using layers found
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SensorChanges uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.BusChanges uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SignalInterfacePropagation uses no layer
+edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges uses no layer
+, smellFound=true, solutions=[], text=Dependency layer Analyzer on type-level
+]

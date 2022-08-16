@@ -1,0 +1,27 @@
+Report [description=edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpComponentsOfModules
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpInterfacesOfModules
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpModulesOfModules
+
+java.util.Collection, quality.as_mm.ChangePropagationDueToHardwareChange 6
+
+
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpGlobalVariablesOfInterfaces
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpParentComponentsOfInterfaces
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpParentModulesOfInterfaces
+
+java.util.Collection, quality.as_mm.ChangePropagationDueToHardwareChange 6
+
+
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpParentModulesOfComponents
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpParentStructuresOfComponents
+
+java.util.Collection, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpParentModulesOfModules
+edu.kit.ipd.sdq.kamp4aps.core.APSArchitectureModelLookup#lookUpParentStructuresOfModules
+
+java.util.Collection, quality.as_mm.ChangePropagationDueToHardwareChange 4
+
+
+, smellFound=true, solutions=[], text=dataclumbs]

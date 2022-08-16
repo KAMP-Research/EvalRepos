@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="aps_ppu_mm" nsURI="aps_ppu_mm" nsPrefix="aps_ppu_mm">
+  <eClassifiers xsi:type="ecore:EClass" name="ModifyMicroSwitchModule">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isReplaced" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../mkamp.quality.as.mm/model/as.mm.ecore#//ModifyModule">
+      <eTypeArguments eClassifier="ecore:EClass ../../mkamp.domain.as/model/as.ecore#//ModuleRepository/Module"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+</ecore:EPackage>

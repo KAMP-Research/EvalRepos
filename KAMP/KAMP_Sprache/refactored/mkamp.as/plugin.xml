@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated as -->
+      <package
+            uri="as"
+            class="domain.as.AsPackage"
+            genModel="model/as.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated as -->
+      <package
+            uri="edu.kit.ipd.sdq.kaps.xppu.componentrepository"
+            class="domain.as.ComponentRepository.ComponentRepositoryPackage"
+            genModel="model/as.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated as -->
+      <package
+            uri="edu.kit.ipd.sdq.kaps.xppu.structurerepository"
+            class="domain.as.StructureRepository.StructureRepositoryPackage"
+            genModel="model/as.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated as -->
+      <package
+            uri="edu.kit.ipd.sdq.kaps.xppu.modulerepository"
+            class="domain.as.ModuleRepository.ModuleRepositoryPackage"
+            genModel="model/as.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated as -->
+      <package
+            uri="edu.kit.ipd.sdq.kaps.xppu.interfacerepository"
+            class="domain.as.InterfaceRepository.InterfaceRepositoryPackage"
+            genModel="model/as.genmodel"/>
+   </extension>
+
+</plugin>

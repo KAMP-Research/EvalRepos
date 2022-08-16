@@ -1,0 +1,11 @@
+Report [description=Type edu.kit.ipd.sdq.kamp4aps.core.derivation.APSSubactivityDerivation produces a language blob
+	, , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.APSChangePropagationAnalysis produces a language blob
+	, , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.SwitchChanges produces a language blob
+	, , , , 
+Type edu.kit.ipd.sdq.kamp4aps.core.scenarios.MicroSwitchModuleChange produces a language blob
+	, 
+Type edu.kit.ipd.sdq.kamp4aps.labels.LabelCustomizing produces a language blob
+	, , , 
+, smellFound=true, solutions=[], text=5 language blobs found]

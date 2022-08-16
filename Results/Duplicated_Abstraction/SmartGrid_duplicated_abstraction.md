@@ -1,0 +1,1 @@
+Report [description=, smellFound=true, solutions=[], text=0 duplicated methods found]
